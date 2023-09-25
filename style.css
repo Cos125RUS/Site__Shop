@@ -356,7 +356,7 @@ summary {
     cursor: pointer;
 }
 
-.product__button h5 {
+.product__button {
     color: #FFF;
     font-size: 14px;
     font-weight: 400;
