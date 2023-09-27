@@ -33,17 +33,17 @@
             align-items: center;
             gap: 30px;
             width: 360px;
-        }
 
-        &__items>img:hover {
-            animation: face 1.5s ease-in-out infinite both;
-        }
+            img:hover {
+                animation: face 1.5s ease-in-out infinite both;
+            }
 
-        &__items p {
-            color: #222224;
-            text-align: center;
-            font-size: 20px;
-            font-weight: 400;
+            p {
+                color: #222224;
+                text-align: center;
+                font-size: 20px;
+                font-weight: 400;
+            }
         }
     }
 
@@ -57,19 +57,22 @@
         &__text {
             min-width: 557px;
             text-align: center;
+
+            h2 {
+                color: #222224;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 167.2%;
+            }
+
+            p {
+                color: #222224;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 167.2%;
+            }
         }
-        &__text>h2 {
-            color: #222224;
-            font-size: 24px;
-            font-weight: 700;
-            line-height: 167.2%;
-        }
-        &__text>p {
-            color: #222224;
-            font-size: 18px;
-            font-weight: 400;
-            line-height: 167.2%;
-        }
+
         &__input {
             width: 256px;
             height: 49px;
@@ -79,10 +82,12 @@
             box-sizing: border-box;
             border-top-left-radius: 22px;
             border-bottom-left-radius: 22px;
+
+            &:focus {
+                outline: none;
+            }
         }
-        &__input:focus {
-            outline: none;
-        }
+
         &__button {
             width: 100px;
             height: 49px;
@@ -94,12 +99,14 @@
             color: #FFF;
             font-size: 14px;
             font-weight: 400;
-        }
-        &__button:hover {
-            cursor: pointer;
-        }
-        &__button:active {
-            background-image: linear-gradient(#c61e40, #F16D7F);
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &:active {
+                background-image: linear-gradient(#c61e40, #F16D7F);
+            }
         }
     }
 }
@@ -111,23 +118,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     &__container {
         width: 100vw;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
+
     &__left>p {
         color: #FBFBFB;
         font-size: 16px;
         font-weight: 400;
     }
+
     &__right {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 7.29px;
     }
+
     &__link {
         width: 32px;
         height: 32px;
@@ -135,12 +146,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-    &__link:hover {
-        background-color: #F16D7F;
-    
-        .label>path {
-            fill: #FFF;
+
+        &:hover {
+            background-color: #F16D7F;
+
+            .label>path {
+                fill: #FFF;
+            }
         }
     }
 }
