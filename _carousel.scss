@@ -1,116 +1,123 @@
 * {
-    // box-sizing: border-box;
-    scrollbar-color: transparent transparent; 
-    scrollbar-width: 0px;
-  }
-  
-  *::-webkit-scrollbar {
-    width: 0;
-  }
-  
+  // box-sizing: border-box;
+  scrollbar-color: transparent transparent;
+  scrollbar-width: 0px;
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+}
+
+@include center(800px);
+* {
+  // max-width: 1600px;
+}
+
 .carousel {
-    position: relative;
-    padding-top: 777px;
-    perspective: 100px;
-    background-color: #F7F7F7;
-  }
-  
-  .carousel__viewport {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    overflow-x: scroll;
-    scroll-behavior: smooth;
-    // scroll-snap-type: x mandatory;
-  }
-  
-  .carousel__slide {
-    position: relative;
-    flex: 0 0 100%;
-    width: 100%;
-    background-image: url('img/products/show/1/4.png');
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .carousel__slide:nth-child(1) {
-    background-image: url('img/products/show/1/1.png');
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  .carousel__slide:nth-child(2) {
-    background-image: url('img/products/show/1/2.png');
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  .carousel__slide:nth-child(3) {
-    background-image: url('img/products/show/1/3.png');
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
+  position: relative;
+  padding-top: 777px;
+  perspective: 100px;
+  background-color: #F7F7F7;
+}
+
+.carousel__viewport {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  // scroll-snap-type: x mandatory;
+}
+
+.carousel__slide {
+  position: relative;
+  flex: 0 0 100%;
+  width: 100%;
+  background-image: url('img/products/show/1/4.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.carousel__slide:nth-child(1) {
+  background-image: url('img/products/show/1/1.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.carousel__slide:nth-child(2) {
+  background-image: url('img/products/show/1/2.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.carousel__slide:nth-child(3) {
+  background-image: url('img/products/show/1/3.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.carousel__snapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  // scroll-snap-align: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
   .carousel__snapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    // scroll-snap-align: center;
-  }
-  
-  @media (prefers-reduced-motion: reduce) {
-    .carousel__snapper {
-      animation-name: none;
-    }
-  }
-  
-  .carousel:hover .carousel__snapper,
-  .carousel:focus-within .carousel__snapper {
     animation-name: none;
   }
-  
-  .carousel::before,
-  .carousel::after,
-  .carousel__prev,
-  .carousel__next {
-    position: absolute;
-    top: 0;
-    margin-top: 37.5%;
-    width: 47px;
-    height: 47px;
-    transform: translateY(-50%);
-    font-size: 0;
-    outline: 0;
-  }
-  
-  .carousel::before,
-  .carousel__prev {
-    left: 0rem;
-  }
-  
-  .carousel::after,
-  .carousel__next {
-    right: 0rem;
-  }
-  
-  .carousel::before,
-  .carousel::after {
-    content: '';
-    z-index: 1;
-    background-color: rgba(42, 42, 42, 0.15);
-    background-repeat: no-repeat;
-    background-position: center center;
-    text-align: center;
-    pointer-events: none;
-  }
-  
-  .carousel::before {
-    background-image: url("img/products/show/arrow_left.svg");
-  }
-  
-  .carousel::after {
-    background-image: url("img/products/show/arrow_right.svg");
-  }
+}
+
+.carousel:hover .carousel__snapper,
+.carousel:focus-within .carousel__snapper {
+  animation-name: none;
+}
+
+.carousel::before,
+.carousel::after,
+.carousel__prev,
+.carousel__next {
+  position: absolute;
+  top: 0;
+  margin-top: 37.5%;
+  width: 47px;
+  height: 47px;
+  transform: translateY(-50%);
+  font-size: 0;
+  outline: 0;
+}
+
+.carousel::before,
+.carousel__prev {
+  left: 0rem;
+}
+
+.carousel::after,
+.carousel__next {
+  right: 0rem;
+}
+
+.carousel::before,
+.carousel::after {
+  content: '';
+  z-index: 1;
+  background-color: rgba(42, 42, 42, 0.15);
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+  pointer-events: none;
+}
+
+.carousel::before {
+  background-image: url("img/products/show/arrow_left.svg");
+}
+
+.carousel::after {
+  background-image: url("img/products/show/arrow_right.svg");
+}

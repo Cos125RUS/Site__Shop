@@ -472,6 +472,11 @@ li {
   width: 0;
 }
 
+.center {
+  padding-left: calc(49vw - 800px);
+  padding-right: calc(49vw - 800px);
+}
+
 .carousel {
   position: relative;
   padding-top: 777px;
