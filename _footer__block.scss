@@ -102,10 +102,11 @@
 
             &:hover {
                 cursor: pointer;
+                background-image: linear-gradient(#c61e40, #F16D7F);
             }
 
             &:active {
-                background-image: linear-gradient(#c61e40, #F16D7F);
+                transform: translateY(1.5px)
             }
         }
     }

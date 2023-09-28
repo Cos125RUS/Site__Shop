@@ -95,5 +95,10 @@
                 }
             }
         }
+
+        &__link:hover {
+            filter: contrast(2);
+            scale: 1.05;
+        }
     }
 }

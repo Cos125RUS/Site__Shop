@@ -142,6 +142,10 @@ summary {
   top: -10px;
   right: -10px;
 }
+.header .menu__link:hover {
+  filter: contrast(2);
+  scale: 1.05;
+}
 
 .banner {
   background-color: #F1E4E6;
@@ -202,6 +206,9 @@ summary {
   justify-content: center;
   align-items: center;
   position: relative;
+}
+.offer__card:hover {
+  box-shadow: 3px -3px rgba(33, 22, 22, 0.7);
 }
 .offer__rectangle {
   position: absolute;
@@ -367,6 +374,13 @@ summary {
   font-size: 13.972px;
   font-weight: 300;
 }
+.advantages .advantage__link:hover {
+  scale: 1.02;
+}
+.advantages .advantage__link:hover .advantage_img {
+  filter: contrast(30);
+  scale: 1.2;
+}
 
 .contact {
   min-height: 448px;
@@ -460,9 +474,10 @@ summary {
 }
 .contact .subscribe__button:hover {
   cursor: pointer;
+  background-image: linear-gradient(#c61e40, #F16D7F);
 }
 .contact .subscribe__button:active {
-  background-image: linear-gradient(#c61e40, #F16D7F);
+  transform: translateY(1.5px);
 }
 
 .footer {
