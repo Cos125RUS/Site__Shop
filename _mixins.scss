@@ -3,3 +3,10 @@
     font-size: $font-size;
     font-weight: $font-weight;
 }
+
+@mixin center($value) {
+    .center {
+        padding-left: calc(49vw - $value);
+        padding-right: calc(49vw - $value);
+    }
+}

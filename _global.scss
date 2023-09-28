@@ -21,10 +21,7 @@ main {
     flex: 1;
 }
 
-.center {
-    padding-left: calc(49vw - 570px);
-    padding-right: calc(49vw - 570px);
-}
+@include center(570px);
 
 details>summary {
     cursor: pointer;

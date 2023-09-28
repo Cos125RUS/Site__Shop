@@ -21,6 +21,26 @@
     animation-timing-function: ease-out;
   }
 }
+.footer__link, .footer__right, .footer, .contact, .product__browse__all, .product__view, .offer__card, .header .menu__right .basket__link::after, .header, .contact .subscribe, .contact .manager__items, .advantages .advantage__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact .subscribe, .contact .manager__items, .advantages .advantage__link {
+  flex-direction: column;
+}
+
+.contact__content, .advantages, .product__items, .offer__content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product__item, .product__content, .header .menu__right .catalog__list, .header .menu__right .catalog__categories {
+  display: flex;
+  flex-direction: column;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -55,26 +75,6 @@ details > summary {
 
 summary {
   display: block;
-}
-
-.footer__link, .footer__right, .footer, .contact, .product__browse__all, .product__view, .offer__card, .header .menu__right .basket__link::after, .header, .contact .subscribe, .contact .manager__items, .advantages .advantage__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.contact .subscribe, .contact .manager__items, .advantages .advantage__link {
-  flex-direction: column;
-}
-
-.contact__content, .advantages, .product__items, .offer__content {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.product__item, .product__content, .header .menu__right .catalog__list, .header .menu__right .catalog__categories {
-  display: flex;
-  flex-direction: column;
 }
 
 .header {
@@ -490,13 +490,13 @@ summary {
   .header {
     min-height: 74px;
   }
-  .menu__left {
+  .header .menu__left {
     padding-left: 16px;
   }
-  .menu__right {
+  .header .menu__right {
     padding-right: 32px;
   }
-  .dropdown__menu {
+  .header .menu .dropdown__menu {
     padding: 20px 74px 20px 20px;
   }
   .banner__left > img {
@@ -511,7 +511,8 @@ summary {
   .banner__text b {
     font-size: 44px;
   }
-  .banner__text h1, .banner__text span {
+  .banner__text h1,
+  .banner__text span {
     font-size: 24px;
   }
   .offer__content {
@@ -548,7 +549,7 @@ summary {
     padding-top: 48px;
     padding-bottom: 140px;
   }
-  .subscribe {
+  .contact .subscribe {
     gap: 27px;
   }
   .footer__left {
@@ -563,24 +564,24 @@ summary {
     padding-left: calc(49vw - 187px);
     padding-right: calc(49vw - 187px);
   }
-  .menu__right > a {
+  .header .menu__right > a {
     display: none;
   }
-  .dropdown__menu {
-    right: 0;
-  }
-  .dropdown__menu > h5 {
-    margin-bottom: 15px;
-  }
-  .catalog__categories {
+  .header .catalog__categories {
     gap: 12px;
   }
-  .catalog__name {
+  .header .catalog__name {
     margin-bottom: 8px;
   }
-  .catalog__list {
+  .header .catalog__list {
     list-style: none;
     gap: 5px;
+  }
+  .header .dropdown__menu {
+    right: 0;
+  }
+  .header .dropdown__menu > h5 {
+    margin-bottom: 15px;
   }
   .banner__content {
     justify-content: start;
@@ -603,7 +604,8 @@ summary {
   .banner__text b {
     font-size: 38px;
   }
-  .banner__text h1, .banner__text span {
+  .banner__text h1,
+  .banner__text span {
     font-size: 20px;
   }
   .offer__content {
@@ -636,10 +638,10 @@ summary {
     gap: 59px;
     padding-bottom: 109px;
   }
-  .subscribe {
+  .contact .subscribe {
     gap: 22px;
   }
-  .subscribe__text {
+  .contact .subscribe__text {
     min-width: 341px;
   }
   .footer {
@@ -709,24 +711,24 @@ summary {
   .contact__content {
     padding-bottom: 48px;
   }
-  .manager__items {
+  .contact .manager__items {
     width: 96vw;
   }
-  .subscribe__text {
+  .contact .subscribe__text {
     min-width: 96vw;
   }
-  .subscribe__entry {
+  .contact .subscribe__entry {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 16px;
   }
-  .subscribe__input {
+  .contact .subscribe__input {
     padding-right: 22px;
     border-top-right-radius: 22px;
     border-bottom-right-radius: 22px;
   }
-  .subscribe__button {
+  .contact .subscribe__button {
     border-top-left-radius: 22px;
     border-bottom-left-radius: 22px;
   }
