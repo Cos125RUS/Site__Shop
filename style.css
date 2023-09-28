@@ -195,6 +195,7 @@ summary {
   font-weight: 700;
 }
 .banner__text b {
+  color: #222;
   font-size: 48px;
   font-weight: 900;
 }
@@ -223,8 +224,8 @@ summary {
   position: absolute;
 }
 .offer__text h3 {
-  color: #FFF;
   text-align: center;
+  color: #FFF;
   font-size: 16px;
   font-weight: 400;
 }
@@ -309,10 +310,10 @@ summary {
   font-weight: 400;
 }
 .product__info p {
-  margin-bottom: 16px;
   color: #5D5D5D;
   font-size: 14px;
   font-weight: 300;
+  margin-bottom: 16px;
   max-width: 315px;
 }
 .product__info h4 {
@@ -349,14 +350,14 @@ summary {
 }
 .advantages .advantage__link h3 {
   color: #FBFBFB;
-  font-size: 19.96px;
+  font-size: 20px;
   font-weight: 400;
   margin-bottom: 16px;
 }
 .advantages .advantage__link p {
-  color: #FBFBFB;
   text-align: center;
-  font-size: 13.972px;
+  color: #FBFBFB;
+  font-size: 14px;
   font-weight: 300;
 }
 .advantages .advantage__link:hover {

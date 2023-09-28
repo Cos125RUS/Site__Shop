@@ -37,20 +37,15 @@
         display: flex;
 
         h1 {
-            color: #222;
-            font-size: 32px;
-            font-weight: 700;
+            @include text(#222, 32px, 700);
         }
 
         b {
-            font-size: 48px;
-            font-weight: 900;
+            @include text(#222, 48px, 900);
         }
 
         span {
-            color: #F16D7F;
-            font-size: 32px;
-            font-weight: 700;
+            @include text(#F16D7F, 32px, 700);
         }
     }
 }
@@ -81,16 +76,12 @@
         position: absolute;
 
         h3 {
-            color: #FFF;
             text-align: center;
-            font-size: 16px;
-            font-weight: 400;
+            @include text(#FFF, 16px, 400);
         }
 
         b {
-            color: #F16D7F;
-            font-size: 24px;
-            font-weight: 700;
+            @include text(#F16D7F, 24px, 700);
         }
     }
 }
@@ -109,15 +100,11 @@
 
     &__title {
         margin-bottom: 6px;
-        color: #222;
-        font-size: 30px;
-        font-weight: 400;
+        @include text(#222, 30px, 400);
     }
 
     &__subtitle {
-        color: #9F9F9F;
-        font-size: 14px;
-        font-weight: 400;
+        @include text(#9F9F9F, 14px, 400);
     }
 
     &__items {
@@ -170,9 +157,7 @@
     &__button {
         display: none;
         position: absolute;
-        color: #FFF;
-        font-size: 14px;
-        font-weight: 400;
+        @include text(#FFF, 14px, 400);
 
         &:hover {
             cursor: pointer;
@@ -185,23 +170,17 @@
 
         h5 {
             margin-bottom: 16px;
-            color: #000;
-            font-size: 13px;
-            font-weight: 400;
+            @include text (#000, 13px, 400);
         }
 
         p {
+            @include text(#5D5D5D, 14px, 300);
             margin-bottom: 16px;
-            color: #5D5D5D;
-            font-size: 14px;
-            font-weight: 300;
             max-width: 315px;
         }
 
         h4 {
-            color: #F16D7F;
-            font-size: 16px;
-            font-weight: 400;
+            @include text(#F16D7F, 16px, 400);
         }
     }
 
@@ -209,9 +188,7 @@
         @extend %flex_center_center;
         width: 212px;
         height: 48px;
-        color: #F26376;
-        font-size: 16px;
-        font-weight: 400;
+        @include text(#F26376, 16px, 400);
         border: 1px solid #F26376;
 
         &:hover {
@@ -241,17 +218,13 @@
             }
 
             h3 {
-                color: #FBFBFB;
-                font-size: 19.96px;
-                font-weight: 400;
+                @include text(#FBFBFB, 20px, 400);
                 margin-bottom: 16px;
             }
 
             p {
-                color: #FBFBFB;
                 text-align: center;
-                font-size: 13.972px;
-                font-weight: 300;
+                @include text(#FBFBFB, 14px, 300);
             }
 
             &:hover {
