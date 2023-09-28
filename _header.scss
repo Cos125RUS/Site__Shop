@@ -1,9 +1,7 @@
 .header {
     min-height: 75px;
     background-color: #222;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex_center_center;
     position: relative;
 
     .menu {
@@ -32,23 +30,18 @@
                     box-sizing: border-box;
 
                     &__title {
-                        color: #000;
-                        font-weight: 700;
+                        @include text(#000, 14px, 700);
                         margin-bottom: 24px;
-                        font-size: 14px;
                     }
                 }
 
                 &__categories {
-                    display: flex;
-                    flex-direction: column;
+                    @extend %flex_column;
                     gap: 20px;
                 }
 
                 &__name {
-                    color: #F16D7F;
-                    font-size: 14px;
-                    font-weight: 400;
+                    @include text(#F16D7F, 14px, 400);
                     margin-bottom: 12px;
                 }
 
@@ -56,14 +49,11 @@
                     list-style-type: disc;
                     list-style-position: inside;
                     color: #fff;
-                    display: flex;
-                    flex-direction: column;
+                    @extend %flex_column;
                     gap: 11px;
 
                     a {
-                        color: #6F6E6E;
-                        font-size: 14px;
-                        font-weight: 400;
+                        @include text(#6F6E6E, 14px, 400);
                         padding: 5px;
                     }
 
@@ -79,16 +69,12 @@
 
                 &::after {
                     content: '5';
-                    color: #FFF;
-                    font-size: 12px;
-                    font-weight: 400;
+                    @include text(#FFF, 12px, 400);
                     width: 19px;
                     height: 19px;
                     background-color: #F16D7F;
                     border-radius: 90%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    @extend %flex_center_center;
                     position: absolute;
                     top: -10px;
                     right: -10px;
@@ -97,8 +83,10 @@
         }
 
         &__link:hover {
-            filter: contrast(2);
-            scale: 1.05;
+            .menu__img {
+                filter: contrast(2);
+                scale: 1.05;
+            }
         }
     }
 }

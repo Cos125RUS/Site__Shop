@@ -57,12 +57,29 @@ summary {
   display: block;
 }
 
-.header {
-  min-height: 75px;
-  background-color: #222;
+.footer__link, .footer__right, .footer, .contact, .product__browse__all, .product__view, .offer__card, .header .menu__right .basket__link::after, .header, .contact .subscribe, .contact .manager__items, .advantages .advantage__link {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.contact .subscribe, .contact .manager__items, .advantages .advantage__link {
+  flex-direction: column;
+}
+
+.contact__content, .advantages, .product__items, .offer__content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product__item, .product__content, .header .menu__right .catalog__list, .header .menu__right .catalog__categories {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  min-height: 75px;
+  background-color: #222;
   position: relative;
 }
 .header .menu {
@@ -90,13 +107,11 @@ summary {
 }
 .header .menu__right .catalog .dropdown__menu__title {
   color: #000;
+  font-size: 14px;
   font-weight: 700;
   margin-bottom: 24px;
-  font-size: 14px;
 }
 .header .menu__right .catalog__categories {
-  display: flex;
-  flex-direction: column;
   gap: 20px;
 }
 .header .menu__right .catalog__name {
@@ -109,8 +124,6 @@ summary {
   list-style-type: disc;
   list-style-position: inside;
   color: #fff;
-  display: flex;
-  flex-direction: column;
   gap: 11px;
 }
 .header .menu__right .catalog__list a {
@@ -135,14 +148,11 @@ summary {
   height: 19px;
   background-color: #F16D7F;
   border-radius: 90%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: absolute;
   top: -10px;
   right: -10px;
 }
-.header .menu__link:hover {
+.header .menu__link:hover .menu__img {
   filter: contrast(2);
   scale: 1.05;
 }
@@ -195,16 +205,11 @@ summary {
 }
 
 .offer__content {
-  display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 30px;
   margin-bottom: 96px;
 }
 .offer__card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: relative;
 }
 .offer__card:hover {
@@ -230,8 +235,6 @@ summary {
 }
 
 .product__content {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   gap: 48px;
   margin-bottom: 95px;
@@ -251,23 +254,16 @@ summary {
   font-weight: 400;
 }
 .product__items {
-  display: flex;
   gap: 30px;
-  flex-wrap: wrap;
   justify-content: center;
 }
 .product__item {
   width: 360px;
-  display: flex;
-  flex-direction: column;
 }
 .product__view {
   background-color: #F7E4E2;
   width: 360px;
   height: 420px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: relative;
 }
 .product__view > img {
@@ -325,9 +321,6 @@ summary {
   font-weight: 400;
 }
 .product__browse__all {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 212px;
   height: 48px;
   color: #F26376;
@@ -342,22 +335,14 @@ summary {
 
 .advantages {
   background-color: #222224;
-  display: flex;
   justify-content: center;
-  align-items: baseline;
   align-content: center;
-  flex-wrap: wrap;
+  align-items: baseline;
   gap: 30px;
   min-height: 341px;
 }
 .advantages .advantage {
   display: flex;
-}
-.advantages .advantage__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 .advantages .advantage__link img {
   margin-bottom: 19px;
@@ -385,9 +370,6 @@ summary {
 .contact {
   min-height: 448px;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: url("img/contact/background.jpg") bottom center no-repeat;
   background-size: cover;
 }
@@ -401,17 +383,11 @@ summary {
 }
 .contact__content {
   width: 100vw;
-  display: flex;
   justify-content: space-between;
   align-items: baseline;
-  flex-wrap: wrap;
   z-index: 3;
 }
 .contact .manager__items {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 30px;
   width: 360px;
 }
@@ -419,16 +395,12 @@ summary {
   animation: face 1.5s ease-in-out infinite both;
 }
 .contact .manager__items p {
-  color: #222224;
   text-align: center;
+  color: #222224;
   font-size: 20px;
   font-weight: 400;
 }
 .contact .subscribe {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
   gap: 32px;
 }
 .contact .subscribe__text {
@@ -483,9 +455,6 @@ summary {
 .footer {
   background-color: #222224;
   min-height: 79px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .footer__container {
   width: 100vw;
@@ -499,18 +468,12 @@ summary {
   font-weight: 400;
 }
 .footer__right {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 7.29px;
 }
 .footer__link {
   width: 32px;
   height: 32px;
   background-color: #FFF;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .footer__link:hover {
   background-color: #F16D7F;

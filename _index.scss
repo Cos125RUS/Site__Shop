@@ -57,17 +57,14 @@
 
 .offer {
     &__content {
-        display: flex;
+        @extend %flex_wrap;
         justify-content: center;
-        flex-wrap: wrap;
         gap: 30px;
         margin-bottom: 96px;
     }
 
     &__card {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %flex_center_center;
         position: relative;
 
         &:hover {
@@ -100,8 +97,7 @@
 
 .product {
     &__content {
-        display: flex;
-        flex-direction: column;
+        @extend %flex_column;
         align-items: center;
         gap: 48px;
         margin-bottom: 95px;
@@ -125,25 +121,21 @@
     }
 
     &__items {
-        display: flex;
+        @extend %flex_wrap;
         gap: 30px;
-        flex-wrap: wrap;
         justify-content: center;
     }
 
     &__item {
         width: 360px;
-        display: flex;
-        flex-direction: column;
+        @extend %flex_column;
     }
 
     &__view {
         background-color: #F7E4E2;
         width: 360px;
         height: 420px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %flex_center_center;
         position: relative;
 
         &>img {
@@ -214,9 +206,7 @@
     }
 
     &__browse__all {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %flex_center_center;
         width: 212px;
         height: 48px;
         color: #F26376;
@@ -233,11 +223,10 @@
 
 .advantages {
     background-color: #222224;
-    display: flex;
+    @extend %flex_wrap;
     justify-content: center;
-    align-items: baseline;
     align-content: center;
-    flex-wrap: wrap;
+    align-items: baseline;
     gap: 30px;
     min-height: 341px;
 
@@ -245,10 +234,7 @@
         display: flex;
 
         &__link {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
+            @extend %flex_column_center_center;
 
             img {
                 margin-bottom: 19px;

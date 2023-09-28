@@ -1,9 +1,7 @@
 .contact {
     min-height: 448px;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex_center_center;
     background: url("img/contact/background.jpg") bottom center no-repeat;
     background-size: cover;
 
@@ -18,19 +16,15 @@
 
     &__content {
         width: 100vw;
-        display: flex;
+        @extend %flex_wrap;
         justify-content: space-between;
         align-items: baseline;
-        flex-wrap: wrap;
         z-index: 3;
     }
 
     .manager {
         &__items {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            @extend %flex_column_center_center;
             gap: 30px;
             width: 360px;
 
@@ -39,19 +33,14 @@
             }
 
             p {
-                color: #222224;
                 text-align: center;
-                font-size: 20px;
-                font-weight: 400;
+                @include text(#222224, 20px, 400);
             }
         }
     }
 
     .subscribe {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
+        @extend %flex_column_center_center;
         gap: 32px;
 
         &__text {
@@ -59,16 +48,12 @@
             text-align: center;
 
             h2 {
-                color: #222224;
-                font-size: 24px;
-                font-weight: 700;
+                @include text(#222224, 24px, 700);
                 line-height: 167.2%;
             }
 
             p {
-                color: #222224;
-                font-size: 18px;
-                font-weight: 400;
+                @include text(#222224, 18px, 400);
                 line-height: 167.2%;
             }
         }
@@ -96,9 +81,7 @@
             background-color: #F16D7F;
             border-top-right-radius: 22px;
             border-bottom-right-radius: 22px;
-            color: #FFF;
-            font-size: 14px;
-            font-weight: 400;
+            @include text(#FFF, 14px, 400);
 
             &:hover {
                 cursor: pointer;
@@ -116,9 +99,7 @@
 .footer {
     background-color: #222224;
     min-height: 79px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex_center_center;
 
     &__container {
         width: 100vw;
@@ -128,15 +109,11 @@
     }
 
     &__left>p {
-        color: #FBFBFB;
-        font-size: 16px;
-        font-weight: 400;
+        @include text(#FBFBFB, 16px, 400);
     }
 
     &__right {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %flex_center_center;
         gap: 7.29px;
     }
 
@@ -144,9 +121,7 @@
         width: 32px;
         height: 32px;
         background-color: #FFF;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %flex_center_center;
 
         &:hover {
             background-color: #F16D7F;
