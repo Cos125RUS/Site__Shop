@@ -21,7 +21,7 @@
     animation-timing-function: ease-out;
   }
 }
-.footer__link, .footer__right, .footer, .contact, .product__browse__all, .product__view, .offer__card, .header .menu__right .basket__link::after, .header, .contact .subscribe, .contact .manager__items, .advantages .advantage__link {
+.footer__link, .footer__right, .footer, .contact, .sub_nav, .product__browse__all, .product__view, .offer__card, .header .menu__right .basket__link::after, .header, .contact .subscribe, .contact .manager__items, .advantages .advantage__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,11 +91,13 @@ summary {
   display: flex;
   align-items: end;
   gap: 41px;
+  padding-left: 16px;
 }
 .header .menu__right {
   display: flex;
   align-items: end;
   gap: 41px;
+  padding-right: 16px;
 }
 .header .menu__right .catalog .dropdown__menu {
   position: absolute;
@@ -214,7 +216,7 @@ summary {
   position: relative;
 }
 .offer__card:hover {
-  box-shadow: 3px -3px rgba(33, 22, 22, 0.7);
+  box-shadow: 3px -3px 3px rgba(33, 22, 22, 0.7);
 }
 .offer__rectangle {
   position: absolute;
@@ -366,6 +368,46 @@ summary {
 .advantages .advantage__link:hover .advantage_img {
   filter: contrast(30);
   scale: 1.2;
+}
+
+.sub_nav {
+  min-height: 148px;
+  background-color: #F8F3F4;
+}
+.sub_nav__content {
+  width: 100vw;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.sub_nav__content__left {
+  padding-left: 16px;
+}
+.sub_nav__content__left h1 {
+  color: #F16D7F;
+  font-size: 24px;
+  font-weight: 400;
+}
+.sub_nav__content__right {
+  padding-right: 16px;
+}
+.sub_nav__content__right__breadcrumb {
+  display: flex;
+  list-style-type: none;
+  gap: 4px;
+}
+.sub_nav__content__right__breadcrumb__item_link {
+  color: #636363;
+  font-size: 14px;
+  font-weight: 300;
+}
+.sub_nav__content__right__breadcrumb__item_link::after {
+  content: " /";
+}
+.sub_nav__content__right__breadcrumb__item {
+  color: #F16D7F;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .contact {

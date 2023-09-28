@@ -1,0 +1,40 @@
+.sub_nav {
+    @extend %flex_center_center;
+    min-height: 148px;
+    background-color: #F8F3F4;
+
+    &__content {
+        width: 100vw;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+
+        &__left {
+            padding-left: 16px;
+
+            h1 {
+                @include text(#F16D7F, 24px, 400);
+            }
+        }
+
+        &__right {
+            padding-right: 16px;
+
+            &__breadcrumb {
+                display: flex;
+                list-style-type: none;
+                gap: 4px;
+
+                &__item_link {
+                    @include text(#636363, 14px, 300);
+                    &::after {
+                        content: ' /';
+                    }
+                }
+                &__item {
+                    @include text(#F16D7F, 14px, 700);
+                }
+            }
+        }
+    }
+}
