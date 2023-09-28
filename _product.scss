@@ -9,7 +9,7 @@
         align-items: baseline;
         justify-content: space-between;
 
-        &__left {
+        &__title {
             padding-left: 16px;
 
             h1 {
@@ -17,89 +17,18 @@
             }
         }
 
-        &__right {
-            padding-right: 16px;
-
-            &__breadcrumb {
-                display: flex;
-                list-style-type: none;
-                gap: 4px;
-
-                &__item_link {
+        &__nav {
+            &__item {
+                &__link {
                     @include text(#636363, 14px, 300);
-
-                    &::after {
-                        content: ' /';
-                    }
-
-                    &:hover {
-                        text-shadow: $pinkColor 2px 2px 2px;
-                    }
-                }
-
-                &__item {
-                    @include text($pinkColor, 14px, 700);
                 }
             }
+            &__active {
+                @include text($pinkColor, 14px, 700);
+            }
         }
+
     }
 }
 
-.image_slide {
-    background-color: #F7F7F7;
-    min-height: 777px;
-    display: flex;
-    position: relative;
-    box-sizing: border-box;
-
-    &__container {
-        display: flex;
-        justify-content: center;
-        position: absolute;
-        width: 98vw;
-
-        &__image {
-            display: flex;
-            margin-top: 11px;
-
-            &__box {
-                display: flex;
-                overflow: hidden;
-                position: relative;
-                min-width: 597px;
-                min-height: 724px;
-
-                & img {
-                    position: absolute;
-                }
-            }
-        }
-    }
-
-    &__arrows {
-        width: 100vw;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        z-index: 10;
-
-        &__button {
-            padding: 8px;
-            @extend %flex_center_center;
-            border: none;
-            
-            &:hover {
-                cursor: pointer;
-
-                .arrow_path {
-                    fill: $pinkColor;
-                }
-            }
-
-            &:active {
-                transform: translateY(2px);
-            }
-        }
-    }
-}
-
+.image_slide {}
