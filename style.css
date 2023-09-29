@@ -21,7 +21,7 @@
     animation-timing-function: ease-out;
   }
 }
-.footer__link, .footer__right, .footer, .contact, .product, .info__box__add_button, .sub_nav, .product__browse__all, .product__view, .offer__card, .header .menu__right .basket__link::after, .header, .contact .subscribe, .contact .manager__items, .info__box, .advantages .advantage__link {
+.footer__link, .footer__right, .footer, .contact, .product, .info__box__add_button, .info__box__options__box__option summary, .info__box__options__box, .info__box__options, .sub_nav, .product__browse__all, .product__view, .offer__card, .header .menu__right .basket__link::after, .header, .contact .subscribe, .contact .manager__items, .info__box, .advantages .advantage__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -540,6 +540,15 @@ li {
 }
 .info__box__options {
   margin-bottom: 48px;
+}
+.info__box__options__box {
+  gap: 23px;
+}
+.info__box__options__box__option summary {
+  gap: 9px;
+  color: #6F6E6E;
+  font-size: 14px;
+  font-weight: 400;
 }
 .info__box__add_button {
   margin-bottom: 65px;

@@ -173,7 +173,18 @@
 
         &__options {
             margin-bottom: 48px;
+            @extend %flex_center_center;
 
+            &__box {
+                @extend %flex_center_center;
+                gap: 23px;
+
+                &__option summary {
+                    @extend %flex_center_center;
+                    gap: 9px;
+                    @include text(#6F6E6E, 14px, 400);
+                }
+            }
         }
 
         &__add_button {
