@@ -25,7 +25,6 @@
             .catalog {
                 .dropdown__menu {
                     position: absolute;
-                    top: 44px;
                     background: #fff;
                     padding: 32px 74px 32px 32px;
                     z-index: 10;
@@ -38,9 +37,16 @@
                 }
 
                 &[open] {
-                    animation: dropdown_menu 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-                    z-index: 500;
-                    top: 0;
+                    .dropdown__menu {
+                        animation: dropdown_menu_down 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                        top: 75px;
+                    }
+                    
+                    &:active {
+                        .dropdown__menu {
+                            animation: dropdown_menu_up 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+                        }
+                    }
                 }
 
                 &__categories {
