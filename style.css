@@ -21,6 +21,16 @@
     animation-timing-function: ease-out;
   }
 }
+@keyframes dropdown_menu {
+  0% {
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .footer__link, .footer__right, .footer, .contact, .product, .info__box__add_button, .info__box__options__box__option summary, .info__box__options__box, .info__box__options, .sub_nav, .product__browse__all, .product__view, .offer__card, .header .menu__right .basket__link::after, .header, .contact .subscribe, .contact .manager__items, .info__box, .advantages .advantage__link {
   display: flex;
   justify-content: center;
@@ -107,7 +117,7 @@ li {
 }
 .header .menu__right .catalog .dropdown__menu {
   position: absolute;
-  top: 75px;
+  top: 44px;
   background: #fff;
   padding: 32px 74px 32px 32px;
   z-index: 10;
@@ -118,6 +128,11 @@ li {
   font-size: 14px;
   font-weight: 700;
   margin-bottom: 24px;
+}
+.header .menu__right .catalog[open] {
+  animation: dropdown_menu 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  z-index: 500;
+  top: 0;
 }
 .header .menu__right .catalog__categories {
   gap: 20px;
@@ -405,6 +420,7 @@ li {
   display: flex;
   list-style-type: none;
   gap: 4px;
+  align-items: baseline;
 }
 .sub_nav__content__right__breadcrumb__item_link > a {
   color: #636363;

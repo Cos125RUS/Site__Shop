@@ -24,6 +24,7 @@
                 display: flex;
                 list-style-type: none;
                 gap: 4px;
+                align-items: baseline;
 
                 &__item_link>a {
                     @include text(#636363, 14px, 300);
