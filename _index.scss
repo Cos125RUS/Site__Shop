@@ -161,6 +161,11 @@
 
         &:hover {
             cursor: pointer;
+            transform: scale(1.05);
+        }
+        
+        &:active {
+            transform: translateY(2px);
         }
     }
 
@@ -194,6 +199,10 @@
         &:hover {
             background-color: #F26376;
             color: #FFF;
+        }
+
+        &:active {
+            transform: translateY(2px);
         }
     }
 }
