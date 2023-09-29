@@ -652,6 +652,16 @@ li {
   font-weight: 400;
 }
 
+.catalog_page__filter_sort {
+  margin-bottom: 64px;
+}
+.catalog_page__list {
+  margin-bottom: 48px;
+}
+.catalog_page__nav {
+  margin-bottom: 96px;
+}
+
 .contact {
   min-height: 448px;
   position: relative;
