@@ -1,6 +1,77 @@
 .catalog_page {
+
     &__filter_sort {
-        margin-bottom: 64px;
+        margin-top: 39px;
+        margin-bottom: 48px;
+
+        &__box {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            position: relative;
+
+            &__filter {
+                box-sizing: border-box;
+                @include text(#000, 14px, 600);
+                width: 360px;
+                padding: 13px 16px 16px;
+
+                &>summary {
+                    display: flex;
+                    align-items: center;
+                    gap: 11px;
+
+                }
+
+                &:hover,
+                &[open] {
+                    &>summary {
+                        color: $pinkColor;
+
+                        &>svg>path {
+                            fill: $pinkColor;
+                        }
+                    }
+                }
+
+                &__menu {
+                    box-sizing: border-box;
+                    position: absolute;
+                    width: 360px;
+                    background-color: #FFF;
+                    z-index: 1;
+                    left: 0;
+                    padding-left: 16px;
+
+                    &>ol {
+                        @extend %flex_column;
+                        gap: 18px;
+                        margin-top: 16px;
+                    }
+
+                    &__category {
+                        &__subcategory {
+                            display: flex;
+                            align-items: center;
+                            border-bottom: 1px solid #EBEBEB;
+                            gap: 8px;
+                        }
+
+                        & ol {
+                            @extend %flex_column;
+                            gap: 11px;
+                            padding: 24px 17px 6px;
+                        }
+
+                        & li {
+                            @include text(#6F6E6E, 14px, 400);
+                        }
+                    }
+                }
+
+            }
+
+        }
     }
 
     &__list {

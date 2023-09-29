@@ -6,7 +6,7 @@
 
 @mixin center($value) {
     .center {
-        padding-left: calc(49vw - $value);
-        padding-right: calc(49vw - $value);
+        padding-left: calc(50vw - $value);
+        padding-right: calc(50vw - $value);
     }
 }
