@@ -1,13 +1,10 @@
 .catalog_page {
 
     &__filter_sort {
-        margin-top: 39px;
-        margin-bottom: 48px;
+        margin-top: 51px;
+        margin-bottom: 65px;
 
         &__box {
-            display: flex;
-            align-items: center;
-            gap: 30px;
             position: relative;
 
             &__filter {
@@ -15,6 +12,9 @@
                 @include text(#000, 14px, 600);
                 width: 360px;
                 padding: 13px 16px 16px;
+                position: absolute;
+                z-index: 10;
+                top: -13px;
 
                 &>summary {
                     display: flex;
@@ -34,14 +34,14 @@
                     }
                 }
 
-                &__menu {
-                    box-sizing: border-box;
-                    position: absolute;
-                    width: 360px;
+                &[open] {
                     background-color: #FFF;
-                    z-index: 1;
-                    left: 0;
+                    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+                }
+
+                &__menu {
                     padding-left: 16px;
+                    padding-bottom: 16px;
 
                     &>ol {
                         @extend %flex_column;
@@ -71,6 +71,12 @@
 
             }
 
+            &__options {
+                .info__box__options__box {
+                    margin-left: 390px;
+                    justify-content: start;
+                }
+            }
         }
     }
 

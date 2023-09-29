@@ -649,13 +649,10 @@ li {
 }
 
 .catalog_page__filter_sort {
-  margin-top: 39px;
-  margin-bottom: 48px;
+  margin-top: 51px;
+  margin-bottom: 65px;
 }
 .catalog_page__filter_sort__box {
-  display: flex;
-  align-items: center;
-  gap: 30px;
   position: relative;
 }
 .catalog_page__filter_sort__box__filter {
@@ -665,6 +662,9 @@ li {
   font-weight: 600;
   width: 360px;
   padding: 13px 16px 16px;
+  position: absolute;
+  z-index: 10;
+  top: -13px;
 }
 .catalog_page__filter_sort__box__filter > summary {
   display: flex;
@@ -677,14 +677,13 @@ li {
 .catalog_page__filter_sort__box__filter:hover > summary > svg > path, .catalog_page__filter_sort__box__filter[open] > summary > svg > path {
   fill: #F16D7F;
 }
-.catalog_page__filter_sort__box__filter__menu {
-  box-sizing: border-box;
-  position: absolute;
-  width: 360px;
+.catalog_page__filter_sort__box__filter[open] {
   background-color: #FFF;
-  z-index: 1;
-  left: 0;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+.catalog_page__filter_sort__box__filter__menu {
   padding-left: 16px;
+  padding-bottom: 16px;
 }
 .catalog_page__filter_sort__box__filter__menu > ol {
   gap: 18px;
@@ -704,6 +703,10 @@ li {
   color: #6F6E6E;
   font-size: 14px;
   font-weight: 400;
+}
+.catalog_page__filter_sort__box__options .info__box__options__box {
+  margin-left: 390px;
+  justify-content: start;
 }
 .catalog_page__list {
   margin-bottom: 48px;
