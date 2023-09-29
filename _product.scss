@@ -25,7 +25,7 @@
                 list-style-type: none;
                 gap: 4px;
 
-                &__item_link {
+                &__item_link>a {
                     @include text(#636363, 14px, 300);
 
                     &::after {

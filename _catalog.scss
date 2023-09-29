@@ -40,7 +40,6 @@
                 }
 
                 &__menu {
-                    padding-left: 16px;
                     padding-bottom: 16px;
 
                     &>ol {
@@ -57,13 +56,17 @@
                             gap: 8px;
                         }
 
+                        &>details[open] {
+                            color: $pinkColor;
+                        }
+
                         & ol {
                             @extend %flex_column;
                             gap: 11px;
                             padding: 24px 17px 6px;
                         }
 
-                        & li {
+                        & li>a {
                             @include text(#6F6E6E, 14px, 400);
                         }
                     }
@@ -72,9 +75,36 @@
             }
 
             &__options {
-                .info__box__options__box {
+                &__all_options {
                     margin-left: 390px;
                     justify-content: start;
+
+                    &__option {
+                        position: relative;
+
+                        &__list {
+                            box-sizing: border-box;
+                            position: absolute;
+                            background-color: #FFF;
+                            box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+                            z-index: 5;
+                            padding: 9px 9px 12px;
+
+
+
+                            &>ol>li {
+                                display: flex;
+                                gap: 9px;
+                                @include text($greyColor, 14px, 400);
+                            }
+                        }
+
+                        .size_frame {
+                            min-width: 79px;
+                            top: 22px;
+                            left: -12px;
+                        }
+                    }
                 }
             }
         }
@@ -86,5 +116,39 @@
 
     &__nav {
         margin-bottom: 96px;
+        height: 43px;
+        display: flex;
+        justify-content: center;
+
+        &__box {
+            border: 1px solid #EBEBEB;
+            display: flex;
+            gap: 15px;
+            padding-left: 16px;
+            padding-right: 16px;
+
+            & button {
+                border: none;
+                background-color: #FFF;
+                cursor: pointer;
+            }
+
+            &__pages {
+                display: flex;
+                align-items: center;
+
+                &__page {
+                    @include text($greyColor, 16px, 300);
+                }
+
+                .page_gap {
+                    padding-right: 10px;
+                }
+
+                .active_page {
+                    color: $pinkColor;
+                }
+            }
+        }
     }
 }

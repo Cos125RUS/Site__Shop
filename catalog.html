@@ -107,17 +107,17 @@
                                                 <img src="img/catalog/line.svg" alt="line"><span>CATEGORY</span>
                                             </summary>
                                             <ol>
-                                                <li>Accessories</li>
-                                                <li>Bags</li>
-                                                <li>Denim</li>
-                                                <li>Hoodies & Sweatshirts</li>
-                                                <li>Jackets & Coats</li>
-                                                <li>Polos</li>
-                                                <li>Shirts</li>
-                                                <li>Shoes</li>
-                                                <li>Sweaters & Knits</li>
-                                                <li>T-Shirts</li>
-                                                <li>Tanks</li>
+                                                <li><a href="#">Accessories</a></li>
+                                                <li><a href="#">Bags</a></li>
+                                                <li><a href="#">Denim</a></li>
+                                                <li><a href="#">Hoodies & Sweatshirts</a></li>
+                                                <li><a href="#">Jackets & Coats</a></li>
+                                                <li><a href="#">Polos</a></li>
+                                                <li><a href="#">Shirts</a></li>
+                                                <li><a href="#">Shoes</a></li>
+                                                <li><a href="#">Sweaters & Knits</a></li>
+                                                <li><a href="#">T-Shirts</a></li>
+                                                <li><a href="#">Tanks</a></li>
                                             </ol>
                                         </details>
                                     </li>
@@ -125,13 +125,14 @@
                                         <details>
                                             <summary
                                                 class="catalog_page__filter_sort__box__filter__menu__category__subcategory">
-                                                <img src="img/catalog/line.svg" alt="line"><span>BRAND</span></summary>
+                                                <img src="img/catalog/line.svg" alt="line"><span>BRAND</span>
+                                            </summary>
                                             <ol>
-                                                <li>Adidas</li>
-                                                <li>Puma</li>
-                                                <li>Nike</li>
-                                                <li>Asics</li>
-                                                <li>Anta</li>
+                                                <li><a href="#">Adidas</a></li>
+                                                <li><a href="#">Puma</a></li>
+                                                <li><a href="#">Nike</a></li>
+                                                <li><a href="#">Asics</a></li>
+                                                <li><a href="#">Anta</a></li>
                                             </ol>
                                         </details>
                                     </li>
@@ -142,8 +143,8 @@
                                                 <img src="img/catalog/line.svg" alt="line"><span>DESIGNER</span>
                                             </summary>
                                             <ol>
-                                                <li>Sport</li>
-                                                <li>Work</li>
+                                                <li><a href="#">Sport</a></li>
+                                                <li><a href="#">Work</a></li>
                                             </ol>
                                         </details>
                                     </li>
@@ -151,17 +152,38 @@
                             </nav>
                         </details>
                         <div class="catalog_page__filter_sort__box__options">
-                            <div class="info__box__options__box">
-                                <details class="info__box__options__box__option">
+                            <div class="info__box__options__box catalog_page__filter_sort__box__options__all_options">
+                                <details
+                                    class="info__box__options__box__option catalog_page__filter_sort__box__options__all_options__option">
                                     <summary>TRENDING NOW<img src="img/products/show/arrow_down.svg" alt="arrow down">
                                     </summary>
+                                    <form class="catalog_page__filter_sort__box__options__all_options__option__list"
+                                        action="#">
+
+                                    </form>
                                 </details>
-                                <details class="info__box__options__box__option">
+                                <details
+                                    class="info__box__options__box__option catalog_page__filter_sort__box__options__all_options__option">
                                     <summary>SIZE<img src="img/products/show/arrow_down.svg" alt="arrow down"></summary>
+                                    <form class="catalog_page__filter_sort__box__options__all_options__option__list size_frame"
+                                        action="#">
+                                        <ol>
+                                            <li><input type="checkbox" name="XS" id="xs">XS</li>
+                                            <li><input type="checkbox" name="S" id="s">S</li>
+                                            <li><input type="checkbox" name="M" id="m">M</li>
+                                            <li><input type="checkbox" name="L" id="l">L</li>
+                                            <li><input type="checkbox" name="XL" id="xl">XL</li>
+                                        </ol>
+                                    </form>
                                 </details>
-                                <details class="info__box__options__box__option">
+                                <details
+                                    class="info__box__options__box__option catalog_page__filter_sort__box__options__all_options__option">
                                     <summary>PRICE<img src="img/products/show/arrow_down.svg" alt="arrow down">
                                     </summary>
+                                    <form class="catalog_page__filter_sort__box__options__all_options__option__list"
+                                        action="#">
+
+                                    </form>
                                 </details>
                             </div>
                         </div>
@@ -315,7 +337,30 @@
                         </figure>
                     </div>
                 </div>
-                <nav class="catalog_page__nav"></nav>
+                <nav class="catalog_page__nav">
+                        <div class="catalog_page__nav__box">
+                            <button class="catalog_page__nav__box__arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="14" viewBox="0 0 9 14" fill="none">
+                                    <path d="M8.995 2L3.995 7L8.995 12L7.995 14L0.994995 7L7.995 0L8.995 2Z" fill="black"/>
+                                  </svg>
+                            </button>
+                            <div class="catalog_page__nav__box__pages">
+                                <button class="catalog_page__nav__box__pages__page page_gap active_page">1</button>
+                                <button class="catalog_page__nav__box__pages__page page_gap">2</button>
+                                <button class="catalog_page__nav__box__pages__page page_gap">3</button>
+                                <button class="catalog_page__nav__box__pages__page page_gap">4</button>
+                                <button class="catalog_page__nav__box__pages__page page_gap">5</button>
+                                <button class="catalog_page__nav__box__pages__page">6</button>
+                                <p class="catalog_page__nav__box__pages__page">.....</p>
+                                <button class="catalog_page__nav__box__pages__page">20</button>
+                            </div>
+                            <button class="catalog_page__nav__box_arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="14" viewBox="0 0 9 14" fill="none">
+                                    <path d="M0.994995 12L5.995 7L0.994995 2L1.995 0L8.995 7L1.995 14L0.994995 12Z" fill="black"/>
+                                  </svg>
+                            </button>
+                        </div>
+                </nav>
             </section>
         </main>
         <div class="advantages">
