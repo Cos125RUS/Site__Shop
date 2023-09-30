@@ -23,29 +23,35 @@
             padding-right: 16px;
 
             .catalog {
+                &__checkbox {
+                    position: absolute;
+                    top: -66666px;
+
+                    &:not(:checked)~.dropdown__menu {
+                        top: -666px;
+                        transition: top 0.3s;
+                    }
+
+                    &:checked~.dropdown__menu {
+                        top: 75px;
+                        transition: top 0.3s;
+                    }
+                }
+
+                &__dropdown_lable {
+                    cursor: pointer;
+                }
+
                 .dropdown__menu {
                     position: absolute;
                     background: #fff;
                     padding: 32px 74px 32px 32px;
-                    z-index: 10;
+                    z-index: 1;
                     box-sizing: border-box;
 
                     &__title {
                         @include text(#000, 14px, 700);
                         margin-bottom: 24px;
-                    }
-                }
-
-                &[open] {
-                    .dropdown__menu {
-                        animation: dropdown_menu_down 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-                        top: 75px;
-                    }
-                    
-                    &:active {
-                        .dropdown__menu {
-                            animation: dropdown_menu_up 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-                        }
                     }
                 }
 

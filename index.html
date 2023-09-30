@@ -16,12 +16,14 @@
         <header class="header">
             <nav class="menu center">
                 <div class="menu__left">
-                    <a href="index.html" class="menu__link"><img src="img/header/icon.svg" alt="logo" class="menu__img"></a>
+                    <a href="index.html" class="menu__link"><img src="img/header/icon.svg" alt="logo"
+                            class="menu__img"></a>
                     <a href="#" class="menu__link"><img src="img/header/search.svg" alt="search" class="menu__img"></a>
                 </div>
                 <div class="menu__right">
-                    <details class="catalog menu__link">
-                        <summary><img src="img/header/catalog.svg" alt="catalog" class="menu__img"></summary>
+                    <div class="catalog menu__link">
+                        <input type="checkbox" name="dropdown" id="dropdown" class="catalog__checkbox">
+                        <label for="dropdown" class="catalog__dropdown_lable"><img src="img/header/catalog.svg" alt="catalog" class="menu__img"></label>
                         <nav class="dropdown__menu">
                             <h5 class="dropdown__menu__title">MENU</h5>
                             <div class="catalog__categories">
@@ -63,9 +65,10 @@
                                 </div>
                             </div>
                         </nav>
-                    </details>
+                    </div>
                     <a href="#" class="menu__link"><img src="img/header/login.svg" alt="login" class="menu__img"></a>
-                    <a href="#" class="basket__link menu__link"><img src="img/header/basket.svg" alt="basket" class="menu__img"></a>
+                    <a href="#" class="basket__link menu__link"><img src="img/header/basket.svg" alt="basket"
+                            class="menu__img"></a>
                 </div>
             </nav>
         </header>
@@ -100,7 +103,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="#">
+                    <a href="catalog.html">
                         <div class="offer__card">
                             <img src="img/offer/2.jpg" alt="photo" class="offer__img">
                             <img src="img/offer/rectangle_small.png" alt="rectangle" class="offer__rectangle">
