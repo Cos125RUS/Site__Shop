@@ -441,9 +441,6 @@ li {
 .sub_nav__content__right__breadcrumb__item_link > a::after {
   content: " /";
 }
-.sub_nav__content__right__breadcrumb__item_link > a:hover {
-  text-shadow: #F16D7F 2px 2px 2px;
-}
 .sub_nav__content__right__breadcrumb__item {
   color: #F16D7F;
   font-size: 14px;
