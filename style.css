@@ -744,10 +744,19 @@ li {
   font-size: 14px;
   font-weight: 400;
 }
+.catalog_page__filter_sort__box__options__all_options__option .trending_now_frame {
+  min-width: 130px;
+  top: 22px;
+}
 .catalog_page__filter_sort__box__options__all_options__option .size_frame {
   min-width: 79px;
   top: 22px;
-  left: -12px;
+  left: -15px;
+}
+.catalog_page__filter_sort__box__options__all_options__option .price_frame {
+  min-width: 140px;
+  top: 22px;
+  left: 1px;
 }
 .catalog_page__filter_sort__box__options__all_options .options_checkbox {
   position: absolute;

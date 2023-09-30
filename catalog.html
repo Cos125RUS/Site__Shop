@@ -23,7 +23,8 @@
                 <div class="menu__right">
                     <div class="catalog menu__link">
                         <input type="checkbox" name="dropdown" id="dropdown" class="catalog__checkbox">
-                        <label for="dropdown" class="catalog__dropdown_lable"><img src="img/header/catalog.svg" alt="catalog" class="menu__img"></label>
+                        <label for="dropdown" class="catalog__dropdown_lable"><img src="img/header/catalog.svg"
+                                alt="catalog" class="menu__img"></label>
                         <nav class="dropdown__menu">
                             <h5 class="dropdown__menu__title">MENU</h5>
                             <div class="catalog__categories">
@@ -158,22 +159,38 @@
                                     class="info__box__options__box__option catalog_page__filter_sort__box__options__all_options__option">
                                     <summary>TRENDING NOW<img src="img/products/show/arrow_down.svg" alt="arrow down">
                                     </summary>
-                                    <form class="catalog_page__filter_sort__box__options__all_options__option__list"
+                                    <form
+                                        class="catalog_page__filter_sort__box__options__all_options__option__list trending_now_frame"
                                         action="#">
-
+                                        <ol>
+                                            <li><input type="checkbox" name="new" id="new"
+                                                    class="options_checkbox"><label for="new">new</label></li>
+                                            <li><input type="checkbox" name="2022" id="2022"
+                                                    class="options_checkbox"><label for="2022">2022</label></li>
+                                            <li><input type="checkbox" name="2021" id="2021"
+                                                    class="options_checkbox"><label for="2021">2021</label></li>
+                                            <li><input type="checkbox" name="2020" id="2020"
+                                                    class="options_checkbox"><label for="2020">2020</label></li>
+                                        </ol>
                                     </form>
                                 </details>
                                 <details
                                     class="info__box__options__box__option catalog_page__filter_sort__box__options__all_options__option">
                                     <summary>SIZE<img src="img/products/show/arrow_down.svg" alt="arrow down"></summary>
-                                    <form class="catalog_page__filter_sort__box__options__all_options__option__list size_frame"
+                                    <form
+                                        class="catalog_page__filter_sort__box__options__all_options__option__list size_frame"
                                         action="#">
                                         <ol>
-                                            <li><input type="checkbox" name="XS" id="xs" class="options_checkbox"><label for="xs">XS</label></li>
-                                            <li><input type="checkbox" name="S" id="s" class="options_checkbox"><label for="s">S</label></li>
-                                            <li><input type="checkbox" name="M" id="m" class="options_checkbox"><label for="m">M</label></li>
-                                            <li><input type="checkbox" name="L" id="l" class="options_checkbox"><label for="l">L</label></li>
-                                            <li><input type="checkbox" name="XL" id="xl" class="options_checkbox"><label for="xl">XL</label></li>
+                                            <li><input type="checkbox" name="XS" id="xs" class="options_checkbox"><label
+                                                    for="xs">XS</label></li>
+                                            <li><input type="checkbox" name="S" id="s" class="options_checkbox"><label
+                                                    for="s">S</label></li>
+                                            <li><input type="checkbox" name="M" id="m" class="options_checkbox"><label
+                                                    for="m">M</label></li>
+                                            <li><input type="checkbox" name="L" id="l" class="options_checkbox"><label
+                                                    for="l">L</label></li>
+                                            <li><input type="checkbox" name="XL" id="xl" class="options_checkbox"><label
+                                                    for="xl">XL</label></li>
                                         </ol>
                                     </form>
                                 </details>
@@ -181,9 +198,17 @@
                                     class="info__box__options__box__option catalog_page__filter_sort__box__options__all_options__option">
                                     <summary>PRICE<img src="img/products/show/arrow_down.svg" alt="arrow down">
                                     </summary>
-                                    <form class="catalog_page__filter_sort__box__options__all_options__option__list"
+                                    <form
+                                        class="catalog_page__filter_sort__box__options__all_options__option__list price_frame"
                                         action="#">
-
+                                        <ol>
+                                            <li><input type="checkbox" name="price1" id="price1"
+                                                    class="options_checkbox"><label for="price1">Дорого</label></li>
+                                            <li><input type="checkbox" name="price2" id="price2"
+                                                    class="options_checkbox"><label for="price2">Очень дорого</label></li>
+                                            <li><input type="checkbox" name="price3" id="price3"
+                                                    class="options_checkbox"><label for="price3">Ещё дороже</label></li>
+                                        </ol>
                                     </form>
                                 </details>
                             </div>
@@ -339,28 +364,31 @@
                     </div>
                 </div>
                 <nav class="catalog_page__nav">
-                        <div class="catalog_page__nav__box">
-                            <button class="catalog_page__nav__box__arrow">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="14" viewBox="0 0 9 14" fill="none">
-                                    <path d="M8.995 2L3.995 7L8.995 12L7.995 14L0.994995 7L7.995 0L8.995 2Z" fill="black"/>
-                                  </svg>
-                            </button>
-                            <div class="catalog_page__nav__box__pages">
-                                <a class="catalog_page__nav__box__pages__page page_gap active_page">1</a>
-                                <a class="catalog_page__nav__box__pages__page page_gap">2</a>
-                                <a class="catalog_page__nav__box__pages__page page_gap">3</a>
-                                <a class="catalog_page__nav__box__pages__page page_gap">4</a>
-                                <a class="catalog_page__nav__box__pages__page page_gap">5</a>
-                                <a class="catalog_page__nav__box__pages__page">6</a>
-                                <p class="catalog_page__nav__box__pages__page">.....</p>
-                                <a class="catalog_page__nav__box__pages__page">20</a>
-                            </div>
-                            <button class="catalog_page__nav__box__arrow">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="14" viewBox="0 0 9 14" fill="none">
-                                    <path d="M0.994995 12L5.995 7L0.994995 2L1.995 0L8.995 7L1.995 14L0.994995 12Z" fill="black"/>
-                                  </svg>
-                            </button>
+                    <div class="catalog_page__nav__box">
+                        <button class="catalog_page__nav__box__arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="9" height="14" viewBox="0 0 9 14"
+                                fill="none">
+                                <path d="M8.995 2L3.995 7L8.995 12L7.995 14L0.994995 7L7.995 0L8.995 2Z" fill="black" />
+                            </svg>
+                        </button>
+                        <div class="catalog_page__nav__box__pages">
+                            <a class="catalog_page__nav__box__pages__page page_gap active_page">1</a>
+                            <a class="catalog_page__nav__box__pages__page page_gap">2</a>
+                            <a class="catalog_page__nav__box__pages__page page_gap">3</a>
+                            <a class="catalog_page__nav__box__pages__page page_gap">4</a>
+                            <a class="catalog_page__nav__box__pages__page page_gap">5</a>
+                            <a class="catalog_page__nav__box__pages__page">6</a>
+                            <p class="catalog_page__nav__box__pages__page">.....</p>
+                            <a class="catalog_page__nav__box__pages__page">20</a>
                         </div>
+                        <button class="catalog_page__nav__box__arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="9" height="14" viewBox="0 0 9 14"
+                                fill="none">
+                                <path d="M0.994995 12L5.995 7L0.994995 2L1.995 0L8.995 7L1.995 14L0.994995 12Z"
+                                    fill="black" />
+                            </svg>
+                        </button>
+                    </div>
                 </nav>
             </section>
         </main>
