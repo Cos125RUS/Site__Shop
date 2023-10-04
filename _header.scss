@@ -1,8 +1,28 @@
-.header {
+.header_box {
+    box-sizing: border-box;
     min-height: 75px;
-    background-color: #222;
-    @extend %flex_center_center;
     position: relative;
+}
+
+.header_fake {
+    min-height: 75px;
+}
+
+.header {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    height: 100%;
+    @extend %flex_center_center;
+
+    &__bg {
+        width: 100vw;
+        background-color: #222;
+        min-height: 75px;
+        display: flex;
+        align-items: center;
+    }
 
     .menu {
         width: 100vw;
@@ -28,7 +48,7 @@
                     top: -66666px;
 
                     &:not(:checked)~.dropdown__menu {
-                        top: -666px;
+                        top: -700px;
                         transition: top 0.3s;
                     }
 
@@ -46,7 +66,7 @@
                     position: absolute;
                     background: #fff;
                     padding: 32px 74px 32px 32px;
-                    z-index: 1;
+                    z-index: -1;
                     box-sizing: border-box;
 
                     &__title {

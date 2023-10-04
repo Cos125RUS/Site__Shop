@@ -13,65 +13,72 @@
 
 <body>
     <div class="container">
-        <header class="header">
-            <nav class="menu center">
-                <div class="menu__left">
-                    <a href="index.html" class="menu__link"><img src="img/header/icon.svg" alt="logo"
-                            class="menu__img"></a>
-                    <a href="#" class="menu__link"><img src="img/header/search.svg" alt="search" class="menu__img"></a>
-                </div>
-                <div class="menu__right">
-                    <div class="catalog menu__link">
-                        <input type="checkbox" name="dropdown" id="dropdown" class="catalog__checkbox">
-                        <label for="dropdown" class="catalog__dropdown_lable"><img src="img/header/catalog.svg"
-                                alt="catalog" class="menu__img"></label>
-                        <nav class="dropdown__menu">
-                            <h5 class="dropdown__menu__title">MENU</h5>
-                            <div class="catalog__categories">
-                                <div class="catalog__block">
-                                    <a href="#">
-                                        <h6 class="catalog__name">MAN</h6>
-                                    </a>
-                                    <ul class="catalog__list">
-                                        <li><a href="#">Accessories</a></li>
-                                        <li><a href="#">Bags</a></li>
-                                        <li><a href="#">Denim</a></li>
-                                        <li><a href="#">T-Shirts</a></li>
-                                    </ul>
-                                </div>
-                                <div class="catalog__block">
-                                    <a href="#">
-                                        <h6 class="catalog__name">WOMAN</h6>
-                                    </a>
-                                    <ul class="catalog__list">
-                                        <li><a href="#">Accessories</a></li>
-                                        <li><a href="#">Jackets & Coats</a></li>
-                                        <li><a href="#">Polos</a></li>
-                                        <li><a href="#">T-Shirts</a></li>
-                                        <li><a href="#">Shirts</a></li>
-                                    </ul>
-                                </div>
-                                <div class="catalog__block">
-                                    <a href="#">
-                                        <h6 class="catalog__name">KIDS</h6>
-                                    </a>
-                                    <ul class="catalog__list">
-                                        <li><a href="#">Accessories</a></li>
-                                        <li><a href="#">Jackets & Coats</a></li>
-                                        <li><a href="#">Polos</a></li>
-                                        <li><a href="#">T-Shirts</a></li>
-                                        <li><a href="#">Shirts</a></li>
-                                        <li><a href="#">Bags</a></li>
-                                    </ul>
-                                </div>
+        <header class="header_box">
+            <div class="header_fake"></div>
+            <dialog class="header">
+                <div class="header__bg">
+                    <nav class="menu center">
+                        <div class="menu__left">
+                            <a href="index.html" class="menu__link"><img src="img/header/icon.svg" alt="logo"
+                                    class="menu__img"></a>
+                            <a href="#" class="menu__link"><img src="img/header/search.svg" alt="search"
+                                    class="menu__img"></a>
+                        </div>
+                        <div class="menu__right">
+                            <div class="catalog menu__link">
+                                <input type="checkbox" name="dropdown" id="dropdown" class="catalog__checkbox">
+                                <label for="dropdown" class="catalog__dropdown_lable"><img src="img/header/catalog.svg"
+                                        alt="catalog" class="menu__img"></label>
+                                <nav class="dropdown__menu">
+                                    <h5 class="dropdown__menu__title">MENU</h5>
+                                    <div class="catalog__categories">
+                                        <div class="catalog__block">
+                                            <a href="#">
+                                                <h6 class="catalog__name">MAN</h6>
+                                            </a>
+                                            <ul class="catalog__list">
+                                                <li><a href="#">Accessories</a></li>
+                                                <li><a href="#">Bags</a></li>
+                                                <li><a href="#">Denim</a></li>
+                                                <li><a href="#">T-Shirts</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="catalog__block">
+                                            <a href="#">
+                                                <h6 class="catalog__name">WOMAN</h6>
+                                            </a>
+                                            <ul class="catalog__list">
+                                                <li><a href="#">Accessories</a></li>
+                                                <li><a href="#">Jackets & Coats</a></li>
+                                                <li><a href="#">Polos</a></li>
+                                                <li><a href="#">T-Shirts</a></li>
+                                                <li><a href="#">Shirts</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="catalog__block">
+                                            <a href="#">
+                                                <h6 class="catalog__name">KIDS</h6>
+                                            </a>
+                                            <ul class="catalog__list">
+                                                <li><a href="#">Accessories</a></li>
+                                                <li><a href="#">Jackets & Coats</a></li>
+                                                <li><a href="#">Polos</a></li>
+                                                <li><a href="#">T-Shirts</a></li>
+                                                <li><a href="#">Shirts</a></li>
+                                                <li><a href="#">Bags</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </nav>
                             </div>
-                        </nav>
-                    </div>
-                    <a href="#" class="menu__link"><img src="img/header/login.svg" alt="login" class="menu__img"></a>
-                    <a href="#" class="basket__link menu__link"><img src="img/header/basket.svg" alt="basket"
-                            class="menu__img"></a>
+                            <a href="#" class="menu__link"><img src="img/header/login.svg" alt="login"
+                                    class="menu__img"></a>
+                            <a href="#" class="basket__link menu__link"><img src="img/header/basket.svg" alt="basket"
+                                    class="menu__img"></a>
+                        </div>
+                    </nav>
                 </div>
-            </nav>
+            </dialog>
         </header>
         <main class="main">
             <sector class="sub_nav">
@@ -84,8 +91,7 @@
                             <li class="sub_nav__content__right__breadcrumb__item_link"><a href="index.html">HOME</a>
                             </li>
                             <li class="sub_nav__content__right__breadcrumb__item_link"><a href="#">MEN</a></li>
-                            <li class="sub_nav__content__right__breadcrumb__item active" aria-current="page">NEW
-                                ARRIVALS</li>
+                            <li class="sub_nav__content__right__breadcrumb__item active" aria-current="page"><a href="#"></a>NEW ARRIVALS</li>
                         </ol>
                     </nav>
                 </div>

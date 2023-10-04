@@ -10,7 +10,7 @@
             &__filter {
                 box-sizing: border-box;
                 @include text(#000, 14px, 600);
-                width: 360px;
+                min-width: 360px;
                 padding: 13px 16px 16px;
                 position: absolute;
                 z-index: 10;
