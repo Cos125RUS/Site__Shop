@@ -24,16 +24,26 @@
                 gap: 4px;
                 align-items: baseline;
 
-                &__item_link>a {
-                    @include text(#636363, 14px, 300);
-
-                    &::after {
-                        content: ' /';
+                &__item_link {
+                    &:not(:last-child) {
+                        &>a{
+                        @include text($greyColor, 14px, 300);}
+    
+                        &::after {
+                            content: ' /';
+                            color: $greyColor;
+                        }
+    
+                        &:hover a{
+                            -webkit-text-stroke: 1px;
+                            -webkit-text-stroke-width: 1px;
+                            -webkit-text-stroke-color: $pinkColor;
+                        }
                     }
-                }
-
-                &:last-child {
-                    @include text($pinkColor, 14px, 700);
+    
+                    &:last-child>a {
+                        @include text($pinkColor, 14px, 700);
+                    }
                 }
             }
         }

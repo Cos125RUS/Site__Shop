@@ -122,6 +122,10 @@
             .menu__img {
                 filter: contrast(2);
                 scale: 1.05;
+
+                &>path {
+                    fill: $pinkColor;
+                }
             }
         }
     }

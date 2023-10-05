@@ -221,6 +221,9 @@ button {
   filter: contrast(2);
   scale: 1.05;
 }
+.header .menu__link:hover .menu__img > path {
+  fill: #F16D7F;
+}
 
 .banner {
   background-color: #F1E4E6;
@@ -464,15 +467,21 @@ button {
   gap: 4px;
   align-items: baseline;
 }
-.sub_nav__content__right__breadcrumb__item_link > a {
+.sub_nav__content__right__breadcrumb__item_link:not(:last-child) > a {
   color: #636363;
   font-size: 14px;
   font-weight: 300;
 }
-.sub_nav__content__right__breadcrumb__item_link > a::after {
+.sub_nav__content__right__breadcrumb__item_link:not(:last-child)::after {
   content: " /";
+  color: #636363;
 }
-.sub_nav__content__right__breadcrumb:last-child {
+.sub_nav__content__right__breadcrumb__item_link:not(:last-child):hover a {
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #F16D7F;
+}
+.sub_nav__content__right__breadcrumb__item_link:last-child > a {
   color: #F16D7F;
   font-size: 14px;
   font-weight: 700;
