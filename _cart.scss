@@ -76,6 +76,10 @@
         &__right {
             min-width: 360px;
 
+            &>form {
+                margin-bottom: 57px;
+            }
+
             &__client_info {
                 margin-top: 17px;
                 border: 0 solid transparent;
@@ -98,6 +102,61 @@
                     vertical-align: middle;
                     padding-left: 17px;
                     @include text($blackColor, 13px, 300);
+                }
+
+                &~button {
+                    font-size: 11px;
+                    width: 101px;
+                    height: 35px;
+                }
+            }
+
+            &__price_info {
+                width: 100%;
+                background-color: #F5F3F3;
+                padding: 39px 43px 42px 44px;
+                text-align: right;
+
+                &__text {
+                    border-bottom: 1px solid #E2E2E2;
+                    padding-bottom: 21px;
+                    margin-bottom: 17px;
+
+                    &>p:first-child {
+                        @include text($blackColor, 11px, 400);
+                        margin-bottom: 17px;
+
+                        &>span {
+                            padding-left: 17px;
+                        }
+                    }
+
+                    &>p:last-child {
+                        @include text($blackColor, 16px, 300);
+
+                        &>span {
+                            @include text($pinkColor, 16px, 700);
+                            padding-left: 15px;
+                        }
+                    }
+                }
+
+                &__button {
+                    @include text($whiteColor, 16px, 300);
+                    width: 273px;
+                    height: 50px;
+                    border: none;
+                    background-color: $pinkColor;
+
+                    &:hover {
+                        background-color: $whiteColor;
+                        color: $pinkColor;
+                        border: 1px solid $pinkColor;
+                    }
+
+                    &:active {
+                        transform: translateY(2px);
+                    }
                 }
             }
         }
