@@ -8,6 +8,12 @@
     width: 0;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 a {
     text-decoration: none;
 }
@@ -37,3 +43,8 @@ ol,
 li {
     list-style: none;
 }
+
+input[type="number"] {
+    font-family: Lato;
+    @include text($greyColor, 18px, 400);
+  }

@@ -1,6 +1,5 @@
 %flex_center_center {
-    display: flex;
-    justify-content: center;
+    @extend %flex_center;
     align-items: center;
 }
 
@@ -22,4 +21,14 @@
 %flex_ai_center {
     display: flex;
     align-items: center;
+}
+
+%flex_center {
+    display: flex;
+    justify-content: center;
+}
+
+%flex_sb {
+    display: flex;
+    justify-content: space-between;
 }

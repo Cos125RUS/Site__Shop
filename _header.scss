@@ -13,11 +13,11 @@
     @extend %flex_center_center;
 
     &__bg {
-        width: 100vw;
+        width: calc(100vw - 6px); 
+        // Откуда это вылезло?
         background-color: #222;
         min-height: 75px;
-        display: flex;
-        align-items: center;
+        @extend %flex_ai_center;
     }
 
     .menu {
