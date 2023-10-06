@@ -1,0 +1,30 @@
+.advantage {
+    display: flex;
+
+    &__link {
+        @extend %flex_column_center_center;
+
+        img {
+            margin-bottom: 19px;
+        }
+
+        h3 {
+            @include text(#FBFBFB, 20px, 400);
+            margin-bottom: 16px;
+        }
+
+        p {
+            text-align: center;
+            @include text(#FBFBFB, 14px, 300);
+        }
+
+        &:hover {
+            .advantage_img {
+                filter: contrast(30);
+                scale: 1.2;
+            }
+
+            scale: 1.02;
+        }
+    }
+}

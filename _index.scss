@@ -1,55 +1,3 @@
-.banner {
-    background-color: #F1E4E6;
-    margin-bottom: 65px;
-
-    &__content {
-        display: flex;
-        justify-content: center;
-    }
-
-    &__content div {
-        width: 50%;
-    }
-
-    &__left {
-        display: flex;
-        justify-content: end;
-    }
-
-    &__right {
-        display: flex;
-        justify-content: start;
-    }
-
-    &__tagline {
-        display: flex;
-        align-items: center;
-    }
-
-    &__text__box {
-        padding-left: 12.5%;
-        display: flex;
-        gap: 16px;
-    }
-
-    &__text {
-        min-width: 377px;
-        display: flex;
-
-        h1 {
-            @include text(#222, 32px, 700);
-        }
-
-        b {
-            @include text(#222, 48px, 900);
-        }
-
-        span {
-            @include text(#F16D7F, 32px, 700);
-        }
-    }
-}
-
 .offer {
     &__content {
         @extend %flex_wrap;
@@ -203,47 +151,6 @@
 
         &:active {
             transform: translateY(2px);
-        }
-    }
-}
-
-.advantages {
-    background-color: #222224;
-    @extend %flex_wrap;
-    justify-content: center;
-    align-content: center;
-    align-items: baseline;
-    gap: 30px;
-    min-height: 341px;
-
-    .advantage {
-        display: flex;
-
-        &__link {
-            @extend %flex_column_center_center;
-
-            img {
-                margin-bottom: 19px;
-            }
-
-            h3 {
-                @include text(#FBFBFB, 20px, 400);
-                margin-bottom: 16px;
-            }
-
-            p {
-                text-align: center;
-                @include text(#FBFBFB, 14px, 300);
-            }
-
-            &:hover {
-                .advantage_img {
-                    filter: contrast(30);
-                    scale: 1.2;
-                }
-
-                scale: 1.02;
-            }
         }
     }
 }

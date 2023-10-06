@@ -1,3 +1,65 @@
+.banner {
+    background-color: #F1E4E6;
+    margin-bottom: 65px;
+
+    &__content {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__content div {
+        width: 50%;
+    }
+
+    &__left {
+        display: flex;
+        justify-content: end;
+    }
+
+    &__right {
+        display: flex;
+        justify-content: start;
+    }
+
+    &__tagline {
+        display: flex;
+        align-items: center;
+    }
+
+    &__text__box {
+        padding-left: 12.5%;
+        display: flex;
+        gap: 16px;
+    }
+
+    &__text {
+        min-width: 377px;
+        display: flex;
+
+        h1 {
+            @include text(#222, 32px, 700);
+        }
+
+        b {
+            @include text(#222, 48px, 900);
+        }
+
+        span {
+            @include text(#F16D7F, 32px, 700);
+        }
+    }
+}
+
+.advantages {
+    background-color: #222224;
+    @extend %flex_wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: baseline;
+    gap: 30px;
+    min-height: 341px;
+}
+
 .contact {
     min-height: 448px;
     position: relative;
@@ -90,44 +152,6 @@
 
             &:active {
                 transform: translateY(1.5px)
-            }
-        }
-    }
-}
-
-
-.footer {
-    background-color: #222224;
-    min-height: 79px;
-    @extend %flex_center_center;
-
-    &__container {
-        width: 100vw;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    &__left>p {
-        @include text(#FBFBFB, 16px, 400);
-    }
-
-    &__right {
-        @extend %flex_center_center;
-        gap: 7.29px;
-    }
-
-    &__link {
-        width: 32px;
-        height: 32px;
-        background-color: #FFF;
-        @extend %flex_center_center;
-
-        &:hover {
-            background-color: #F16D7F;
-
-            .label>path {
-                fill: #FFF;
             }
         }
     }
