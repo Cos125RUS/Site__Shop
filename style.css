@@ -1090,6 +1090,7 @@ button {
   padding-left: 15px;
 }
 .cart__box__right__price_info__button {
+  cursor: pointer;
   color: #FFF;
   font-size: 16px;
   font-weight: 300;
