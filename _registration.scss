@@ -9,7 +9,7 @@
 
     }
 
-    &_entry {
+    &-entry {
         @extend %flex_column;
         border: none;
         gap: 20px;
@@ -32,6 +32,22 @@
             height: 45px;
             padding-left: 17px;
             border: 1px solid $greyColor;
+
+            &::placeholder {
+                @include text(#B1B1B1, 13px, 300);
+            }
+
+            &:focus {
+                background-color: $whiteColor;
+                border-color: $pinkColor;
+                background-color: #F8F3F4;
+                outline: 0;
+                box-shadow: 0 0 0 0.1rem $pinkColor;
+            }
+
+            &:hover {
+                border: 1px solid $pinkColor;
+            }
         }
     }
 

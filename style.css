@@ -21,7 +21,7 @@
     animation-timing-function: ease-out;
   }
 }
-.footer__link, .footer__right, .footer, .product, .info__box__add_button, .info__box__options__box__option summary, .info__box__options__box, .info__box__options, .sub_nav, .product__browse__all, .product__view, .offer__card, .pink_button, .contact, .basket__link::after, .header__box, .info__box, .advantage__link, .contact .subscribe, .contact .manager__items {
+.footer__link, .footer__right, .footer, .product, .info__box__add_button, .info__box__options__box__option summary, .info__box__options__box, .info__box__options, .sub_nav, .product__browse__all, .product__view, .offer__card, .pink-button, .contact, .basket__link::after, .header__box, .info__box, .advantage__link, .contact .subscribe, .contact .manager__items {
   align-items: center;
 }
 
@@ -34,7 +34,7 @@
   flex-wrap: wrap;
 }
 
-.condition__list, .registration_entry, .cart__box__right__client_info, .cart__box__left__products__product__box__description__attributes, .cart__box__left__products, .catalog_page__filter_sort__box__options__all_options__option__list ol, .catalog_page__filter_sort__box__filter__menu__category ol, .catalog_page__filter_sort__box__filter__menu > ol, .product__item, .product__content, .catalog__list, .catalog__categories {
+.condition__list, .registration-entry, .cart__box__right__client_info, .cart__box__left__products__product__box__description__attributes, .cart__box__left__products, .catalog_page__filter_sort__box__options__all_options__option__list ol, .catalog_page__filter_sort__box__filter__menu__category ol, .catalog_page__filter_sort__box__filter__menu > ol, .product__item, .product__content, .catalog__list, .catalog__categories {
   display: flex;
   flex-direction: column;
 }
@@ -44,7 +44,7 @@
   align-items: center;
 }
 
-.footer__link, .footer__right, .footer, .product, .info__box__add_button, .info__box__options__box__option summary, .info__box__options__box, .info__box__options, .sub_nav, .product__browse__all, .product__view, .offer__card, .pink_button, .contact, .basket__link::after, .header__box, .info__box, .advantage__link, .contact .subscribe, .contact .manager__items {
+.footer__link, .footer__right, .footer, .product, .info__box__add_button, .info__box__options__box__option summary, .info__box__options__box, .info__box__options, .sub_nav, .product__browse__all, .product__view, .offer__card, .pink-button, .contact, .basket__link::after, .header__box, .info__box, .advantage__link, .contact .subscribe, .contact .manager__items {
   display: flex;
   justify-content: center;
 }
@@ -400,7 +400,7 @@ textarea {
   scale: 1.2;
 }
 
-.pink_button {
+.pink-button {
   box-sizing: border-box;
   color: #FFF;
   font-size: 14px;
@@ -411,16 +411,16 @@ textarea {
   border: 1px solid #FFF;
   color: #FFF;
 }
-.pink_button:hover {
+.pink-button:hover {
   cursor: pointer;
   color: #F16D7F;
   background: #FFF;
   border: 1px solid #F16D7F;
 }
-.pink_button:hover .svg > path {
+.pink-button:hover .svg > path {
   fill: #F16D7F;
 }
-.pink_button:active {
+.pink-button:active {
   transform: translateY(2px);
 }
 
@@ -1161,29 +1161,49 @@ textarea {
 .registration .user_data {
   min-width: 360px;
 }
-.registration_entry {
+.registration-entry {
   border: none;
   gap: 20px;
   padding-top: 20px;
 }
-.registration_entry__top {
+.registration-entry__top {
   margin-bottom: 31px;
 }
-.registration_entry__bottom {
+.registration-entry__bottom {
   margin-bottom: 15px;
 }
-.registration_entry > legend {
+.registration-entry > legend {
   color: #000;
   font-size: 16px;
   font-weight: 300;
 }
-.registration_entry > input {
+.registration-entry > input {
   color: #636363;
   font-size: 13px;
   font-weight: 300;
   height: 45px;
   padding-left: 17px;
   border: 1px solid #636363;
+}
+.registration-entry > input::-moz-placeholder {
+  color: #B1B1B1;
+  font-size: 13px;
+  font-weight: 300;
+}
+.registration-entry > input::placeholder {
+  color: #B1B1B1;
+  font-size: 13px;
+  font-weight: 300;
+}
+.registration-entry > input:focus {
+  background-color: #FFF;
+  border-color: #F16D7F;
+  background-color: #F8F3F4;
+  outline: 0;
+  box-shadow: 0 0 0 0.1rem #F16D7F;
+}
+.registration-entry > input:hover {
+  border: 1px solid #F16D7F;
 }
 .registration .gender {
   color: #000;
