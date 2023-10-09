@@ -34,7 +34,7 @@
   flex-wrap: wrap;
 }
 
-.condition__list, .registration-entry, .cart__box__right__client_info, .cart__box__left__products__product__box__description__attributes, .cart__box__left__products, .catalog_page__filter_sort__box__options__all_options__option__list ol, .catalog_page__filter_sort__box__filter__menu__category ol, .catalog_page__filter_sort__box__filter__menu > ol, .product__item, .product__content, .catalog__list, .catalog__categories {
+.condition__list, .registration_entry, .cart__box__right__client_info, .cart__box__left__products__product__box__description__attributes, .cart__box__left__products, .catalog_page__filter_sort__box__options__all_options__option__list ol, .catalog_page__filter_sort__box__filter__menu__category ol, .catalog_page__filter_sort__box__filter__menu > ol, .product__item, .product__content, .catalog__list, .catalog__categories {
   display: flex;
   flex-direction: column;
 }
@@ -1161,23 +1161,23 @@ textarea {
 .registration .user_data {
   min-width: 360px;
 }
-.registration-entry {
+.registration_entry {
   border: none;
   gap: 20px;
   padding-top: 20px;
 }
-.registration-entry__top {
+.registration_entry__top {
   margin-bottom: 31px;
 }
-.registration-entry__bottom {
+.registration_entry__bottom {
   margin-bottom: 15px;
 }
-.registration-entry > legend {
+.registration_entry > legend {
   color: #000;
   font-size: 16px;
   font-weight: 300;
 }
-.registration-entry > input {
+.registration_entry > input {
   color: #636363;
   font-size: 13px;
   font-weight: 300;
