@@ -4,7 +4,7 @@
     @extend %flex_sb;
     gap: 128px;
 
-    .user-data {
+    .user_data {
         min-width: 360px;
 
     }
@@ -83,7 +83,7 @@
         }
     }
 
-    .pink-button--registration {
+    .pink_button--registration {
         font-size: 14px;
         font-weight: 400;
         @extend %flex_ai_center;

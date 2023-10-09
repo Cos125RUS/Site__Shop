@@ -21,7 +21,7 @@
     animation-timing-function: ease-out;
   }
 }
-.footer__link, .footer__right, .footer, .product, .info__box__add_button, .info__box__options__box__option summary, .info__box__options__box, .info__box__options, .sub_nav, .product__browse__all, .product__view, .offer__card, .pink-button, .contact, .basket__link::after, .header__box, .info__box, .advantage__link, .contact .subscribe, .contact .manager__items {
+.footer__link, .footer__right, .footer, .product, .info__box__add_button, .info__box__options__box__option summary, .info__box__options__box, .info__box__options, .sub_nav, .product__browse__all, .product__view, .offer__card, .pink_button, .contact, .basket__link::after, .header__box, .info__box, .advantage__link, .contact .subscribe, .contact .manager__items {
   align-items: center;
 }
 
@@ -39,12 +39,12 @@
   flex-direction: column;
 }
 
-.registration .pink-button--registration, .catalog_page__nav__box__pages, .catalog_page__nav__box__arrow, .catalog_page__filter_sort__box__options__all_options .options_checkbox + label, .catalog_page__filter_sort__box__filter__menu__category__subcategory, .catalog_page__filter_sort__box__filter > summary, .header__bg {
+.registration .pink_button--registration, .catalog_page__nav__box__pages, .catalog_page__nav__box__arrow, .catalog_page__filter_sort__box__options__all_options .options_checkbox + label, .catalog_page__filter_sort__box__filter__menu__category__subcategory, .catalog_page__filter_sort__box__filter > summary, .header__bg {
   display: flex;
   align-items: center;
 }
 
-.footer__link, .footer__right, .footer, .product, .info__box__add_button, .info__box__options__box__option summary, .info__box__options__box, .info__box__options, .sub_nav, .product__browse__all, .product__view, .offer__card, .pink-button, .contact, .basket__link::after, .header__box, .info__box, .advantage__link, .contact .subscribe, .contact .manager__items {
+.footer__link, .footer__right, .footer, .product, .info__box__add_button, .info__box__options__box__option summary, .info__box__options__box, .info__box__options, .sub_nav, .product__browse__all, .product__view, .offer__card, .pink_button, .contact, .basket__link::after, .header__box, .info__box, .advantage__link, .contact .subscribe, .contact .manager__items {
   display: flex;
   justify-content: center;
 }
@@ -400,7 +400,7 @@ textarea {
   scale: 1.2;
 }
 
-.pink-button {
+.pink_button {
   box-sizing: border-box;
   color: #FFF;
   font-size: 14px;
@@ -411,16 +411,16 @@ textarea {
   border: 1px solid #FFF;
   color: #FFF;
 }
-.pink-button:hover {
+.pink_button:hover {
   cursor: pointer;
   color: #F16D7F;
   background: #FFF;
   border: 1px solid #F16D7F;
 }
-.pink-button:hover .svg > path {
+.pink_button:hover .svg > path {
   fill: #F16D7F;
 }
-.pink-button:active {
+.pink_button:active {
   transform: translateY(2px);
 }
 
@@ -1158,7 +1158,7 @@ textarea {
   padding-bottom: 96px;
   gap: 128px;
 }
-.registration .user-data {
+.registration .user_data {
   min-width: 360px;
 }
 .registration-entry {
@@ -1231,7 +1231,7 @@ textarea {
 .registration .description__registration {
   margin-bottom: 39px;
 }
-.registration .pink-button--registration {
+.registration .pink_button--registration {
   font-size: 14px;
   font-weight: 400;
   gap: 20px;

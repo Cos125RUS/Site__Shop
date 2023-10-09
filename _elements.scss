@@ -30,7 +30,7 @@
 }
 
 
-.pink-button {
+.pink_button {
     box-sizing: border-box;
     @include text($whiteColor, 14px, 400);
     @extend %flex_center_center;
