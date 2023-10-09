@@ -21,7 +21,7 @@
     animation-timing-function: ease-out;
   }
 }
-.footer__link, .footer__right, .footer, .product, .info__box__add_button, .info__box__options__box__option summary, .info__box__options__box, .info__box__options, .sub_nav, .product__browse__all, .product__view, .offer__card, .contact, .basket__link::after, .header__box, .info__box, .advantage__link, .contact .subscribe, .contact .manager__items {
+.footer__link, .footer__right, .footer, .product, .info__box__add_button, .info__box__options__box__option summary, .info__box__options__box, .info__box__options, .sub_nav, .product__browse__all, .product__view, .offer__card, .pink-button, .contact, .basket__link::after, .header__box, .info__box, .advantage__link, .contact .subscribe, .contact .manager__items {
   align-items: center;
 }
 
@@ -39,12 +39,12 @@
   flex-direction: column;
 }
 
-.registration-button, .catalog_page__nav__box__pages, .catalog_page__nav__box__arrow, .catalog_page__filter_sort__box__options__all_options .options_checkbox + label, .catalog_page__filter_sort__box__filter__menu__category__subcategory, .catalog_page__filter_sort__box__filter > summary, .header__bg {
+.registration .pink-button--registration, .catalog_page__nav__box__pages, .catalog_page__nav__box__arrow, .catalog_page__filter_sort__box__options__all_options .options_checkbox + label, .catalog_page__filter_sort__box__filter__menu__category__subcategory, .catalog_page__filter_sort__box__filter > summary, .header__bg {
   display: flex;
   align-items: center;
 }
 
-.footer__link, .footer__right, .footer, .product, .info__box__add_button, .info__box__options__box__option summary, .info__box__options__box, .info__box__options, .sub_nav, .product__browse__all, .product__view, .offer__card, .contact, .basket__link::after, .header__box, .info__box, .advantage__link, .contact .subscribe, .contact .manager__items {
+.footer__link, .footer__right, .footer, .product, .info__box__add_button, .info__box__options__box__option summary, .info__box__options__box, .info__box__options, .sub_nav, .product__browse__all, .product__view, .offer__card, .pink-button, .contact, .basket__link::after, .header__box, .info__box, .advantage__link, .contact .subscribe, .contact .manager__items {
   display: flex;
   justify-content: center;
 }
@@ -398,6 +398,30 @@ textarea {
 .advantage__link:hover .advantage_img {
   filter: contrast(30);
   scale: 1.2;
+}
+
+.pink-button {
+  box-sizing: border-box;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 400;
+  gap: 20px;
+  padding: 16px 29px;
+  background-color: #F16D7F;
+  border: 1px solid #FFF;
+  color: #FFF;
+}
+.pink-button:hover {
+  cursor: pointer;
+  color: #F16D7F;
+  background: #FFF;
+  border: 1px solid #F16D7F;
+}
+.pink-button:hover .svg > path {
+  fill: #F16D7F;
+}
+.pink-button:active {
+  transform: translateY(2px);
 }
 
 .offer__content {
@@ -1207,26 +1231,11 @@ textarea {
 .registration .description__registration {
   margin-bottom: 39px;
 }
-.registration-button {
-  box-sizing: border-box;
-  color: #FFF;
-  background-color: #F16D7F;
-  border: none;
+.registration .pink-button--registration {
+  font-size: 14px;
+  font-weight: 400;
   gap: 20px;
   padding: 16px 29px;
-  border: 1px solid #FFF;
-}
-.registration-button:hover {
-  cursor: pointer;
-  color: #F16D7F;
-  background: #FFF;
-  border: 1px solid #F16D7F;
-}
-.registration-button:hover .arrow > path {
-  fill: #F16D7F;
-}
-.registration-button:active {
-  transform: translateY(2px);
 }
 
 .condition * {

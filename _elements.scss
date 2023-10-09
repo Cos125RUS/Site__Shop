@@ -28,3 +28,30 @@
         }
     }
 }
+
+
+.pink-button {
+    box-sizing: border-box;
+    @include text($whiteColor, 14px, 400);
+    @extend %flex_center_center;
+    gap: 20px;
+    padding: 16px 29px;
+    background-color: $pinkColor;
+    border: 1px solid $whiteColor;
+    color: $whiteColor;
+
+    &:hover {
+        cursor: pointer;
+        color: $pinkColor;
+        background: $whiteColor;
+        border: 1px solid $pinkColor;
+
+        .svg>path {
+            fill: $pinkColor;
+        }
+    }
+
+    &:active {
+        transform: translateY(2px);
+    }
+}

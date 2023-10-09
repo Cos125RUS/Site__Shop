@@ -83,30 +83,12 @@
         }
     }
 
-    &-button {
-        box-sizing: border-box;
-        color: $whiteColor;
-        background-color: $pinkColor;
-        border: none;
+    .pink-button--registration {
+        font-size: 14px;
+        font-weight: 400;
         @extend %flex_ai_center;
         gap: 20px;
         padding: 16px 29px;
-        border: 1px solid $whiteColor;
-
-        &:hover {
-            cursor: pointer;
-            color: $pinkColor;
-            background: $whiteColor;
-            border: 1px solid $pinkColor;
-            
-            .arrow>path {
-                fill: $pinkColor;
-            }
-        }
-
-        &:active {
-            transform: translateY(2px);
-        }
     }
 }
 
@@ -126,7 +108,8 @@
     &__list {
         @extend %flex_column;
         gap: 16px;
-        & li {        
+
+        & li {
             &::before {
                 content: '';
                 display: inline-block;
