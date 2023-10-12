@@ -111,7 +111,7 @@
             cursor: pointer;
             transform: scale(1.05);
         }
-        
+
         &:active {
             transform: translateY(2px);
         }
@@ -151,6 +151,41 @@
 
         &:active {
             transform: translateY(2px);
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .offer {
+        &__content {
+            gap: 20px;
+            margin-bottom: 109px;
+        }
+
+        &__card>img {
+            max-height: 167px;
+        }
+
+        &__big>img {
+            max-height: 116px;
+        }
+    }
+
+    .products {
+        .product {
+            &__content {
+                gap: 0;
+                margin-bottom: 64px;
+            }
+
+            &__head {
+                margin-bottom: 73px;
+            }
+
+            &__items {
+                gap: 16px;
+                margin-bottom: 32px;
+            }
         }
     }
 }

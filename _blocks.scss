@@ -157,3 +157,50 @@
     }
 }
 
+@media (max-width: 1024px) {
+
+    .banner {
+        &__left>img {
+            max-height: 368px;
+        }
+
+        &__text__box {
+            padding-left: 39px;
+        }
+
+        &__text {
+            min-width: 283px;
+
+            b {
+                font-size: 44px;
+            }
+
+            h1,
+            span {
+                font-size: 24px;
+            }
+        }
+    }
+    
+    .advantages {
+        flex-direction: column;
+        align-items: center;
+        gap: 49px;
+        padding-top: 48px;
+        padding-bottom: 64px;
+    }
+
+    .contact {
+        &__content {
+            justify-content: center;
+            gap: 64px;
+            padding-top: 48px;
+            padding-bottom: 140px;
+        }
+
+        .subscribe {
+            gap: 27px;
+        }
+    }
+
+}

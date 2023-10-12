@@ -56,3 +56,9 @@ button {
 textarea {
     font-family: Lato;
 }
+
+@media (max-width: 1024px) {
+
+    @include center(368px);
+    
+}

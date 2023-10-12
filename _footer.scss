@@ -34,3 +34,16 @@
         }
     }
 }
+
+@media (max-width: 1024px) {
+
+    .footer {
+        &__left {
+            padding-left: 16px;
+        }
+
+        &__right {
+            padding-right: 16px;
+        }
+    }
+}
