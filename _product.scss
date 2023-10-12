@@ -280,9 +280,10 @@
         &__items {
             gap: 16px;
 
-            .product__item:last-child {
-                display: none;
-            }
+
         }
+    }
+    .product>.product__items>.product__item:last-child {
+        display: none;
     }
 }
