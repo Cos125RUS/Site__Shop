@@ -137,3 +137,19 @@
         }
     }
 }
+
+@media (max-width: 1024px) {
+    .registration {
+        gap: 22px;
+    }
+
+    .condition {
+        & * {
+            font-size: 16px;
+        }
+
+        &__list>li {
+            list-style-position: outside;
+        }
+    }
+}
