@@ -197,3 +197,25 @@
         }
     }
 }
+
+@media (max-width: 1024px) {
+    .catalog_page {
+        &__filter_sort {
+            margin-top: 24px;
+            margin-bottom: 40px;
+
+            &__box__options__all_options {
+                margin-left: 0;
+                justify-content: end;
+            }
+        }
+
+        .product__items {
+            gap: 16px;
+
+            .product__item:last-child {
+                display: none;
+            }
+        }
+    }
+}

@@ -190,3 +190,28 @@
         transform: translateY(2px);
     }
 }
+
+@media (max-width: 1024px) {
+    .cart {
+        padding-top: 59px;
+
+        &__box {
+            flex-direction: column;
+            gap: 64px;
+
+            &__right {
+                gap: 15px;
+                display: flex;
+                
+                &__child {
+                    flex-basis: 50%;
+                }
+
+                &__price_info {
+                    margin-top: 55px;
+                    max-height: 214px;
+                }
+            }
+        }
+    }
+}
