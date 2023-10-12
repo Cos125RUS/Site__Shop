@@ -1396,6 +1396,9 @@ textarea {
 .condition__list {
   gap: 16px;
 }
+.condition__list li {
+  display: flex;
+}
 .condition__list li::before {
   content: "";
   display: inline-block;
@@ -1411,9 +1414,6 @@ textarea {
   }
   .condition * {
     font-size: 16px;
-  }
-  .condition__list > li {
-    list-style-position: outside;
   }
 }
 .footer {
