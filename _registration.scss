@@ -151,3 +151,13 @@
         }
     }
 }
+
+@media (max-width: 767px) {
+    .registration {
+        display: flex;
+        flex-direction: column;
+        padding-left: 9px;
+        padding-right: 9px;
+        gap: 40px;
+    }
+}

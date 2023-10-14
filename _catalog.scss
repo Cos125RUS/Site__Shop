@@ -219,3 +219,32 @@
         }
     }
 }
+
+@media (max-width: 767px) {
+    .catalog_page {
+        &__filter_sort {
+            &__box {
+                &__filter {
+                    min-width: 0;
+                    font-size: 0;
+                    left: -15px;
+
+                    & summary svg {
+                        width: 38px;
+                        height: 25px;
+                    }
+                }
+
+                &__options__all_options {
+                    margin-right: 9px;
+                    &__option .price_frame {
+                        left: -75px;
+                    }
+                }
+            }
+        }
+    }
+    .catalog_page .product__items .product__item:last-child {
+        display: inline-block;
+    }
+}
