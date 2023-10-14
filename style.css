@@ -279,6 +279,7 @@ textarea {
   .header .dropdown > h5 {
     margin-bottom: 36px;
     text-align: center;
+    font-size: 18px;
   }
   .header .dropdown .catalog__categories {
     flex-direction: row;
@@ -291,8 +292,9 @@ textarea {
   .header .dropdown .catalog__block:nth-child(1) {
     order: 3;
   }
-  .header .dropdown .catalog__block > * {
+  .header .dropdown .catalog__block * {
     text-align: center;
+    font-size: 18px;
   }
 }
 .banner {
@@ -516,6 +518,9 @@ textarea {
   }
 }
 @media (max-width: 767px) {
+  .banner {
+    margin-top: 75px;
+  }
   .banner__content {
     justify-content: start;
     min-height: 363px;
@@ -540,6 +545,16 @@ textarea {
   .banner__text h1,
   .banner__text span {
     font-size: 20px;
+  }
+  .sub_nav {
+    margin-top: 75px;
+  }
+  .sub_nav__content {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+    padding-top: 24px;
+    padding-bottom: 46px;
   }
   .advantages {
     gap: 46px;
@@ -812,6 +827,7 @@ textarea {
   background-image: url("img/products/show/1/4.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
 }
 .image .carousel__slide:nth-child(1) {
   background-image: url("img/products/show/1/1.png");
@@ -1016,7 +1032,10 @@ textarea {
 
 @media (max-width: 1024px) {
   .image .carousel {
-    padding-top: 768px;
+    padding-top: 624px;
+  }
+  .image .carousel__prev, .image .carousel__next {
+    margin-top: 288px;
   }
   .info {
     margin-bottom: 129px;
@@ -1029,6 +1048,40 @@ textarea {
     gap: 16px;
   }
   .product > .product__items > .product__item:last-child {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .info {
+    margin-bottom: 64px;
+  }
+  .info__box__pos_name {
+    margin-bottom: 32px;
+  }
+  .info__box__subscription {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .info__box__price {
+    margin-bottom: 32px;
+  }
+  .info__box__grey_line {
+    max-width: 175px;
+    margin-bottom: 49px;
+  }
+  .info__box__options {
+    margin-bottom: 64px;
+  }
+  .product {
+    margin-bottom: 64px;
+  }
+  .product__items {
+    gap: 0;
+  }
+  .product > .product__items > .product__item:last-child {
+    display: inline-block;
+  }
+  .product > .product__items > .product__item:nth-child(2) {
     display: none;
   }
 }

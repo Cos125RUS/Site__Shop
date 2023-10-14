@@ -260,6 +260,7 @@
 
 @media (max-width: 767px) {
     .banner {
+        margin-top: 75px;
         &__content {
             justify-content: start;
             min-height: 363px;
@@ -290,6 +291,17 @@
             span {
                 font-size: 20px;
             }
+        }
+    }
+
+    .sub_nav {
+        margin-top: 75px;
+        &__content {
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 32px;
+            padding-top: 24px;
+            padding-bottom: 46px;
         }
     }
 
