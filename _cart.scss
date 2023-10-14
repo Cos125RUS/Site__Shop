@@ -151,7 +151,7 @@
                 }
 
                 &__button {
-                    cursor: pointer; 
+                    cursor: pointer;
                     @include text($whiteColor, 16px, 300);
                     width: 273px;
                     height: 50px;
@@ -202,7 +202,7 @@
             &__right {
                 gap: 15px;
                 display: flex;
-                
+
                 &__child {
                     flex-basis: 50%;
                 }
@@ -212,6 +212,77 @@
                     max-height: 214px;
                 }
             }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .cart {
+        padding-top: 39px;
+
+        &__box {
+            gap: 48px;
+
+            &__left {
+                min-width: 0;
+                width: 358px;
+
+                &__products {
+                    gap: 32px;
+                    margin-bottom: 30px;
+
+                    &__product {
+                        gap: 17px;
+
+                        & img {
+                            height: 188px;
+                        }
+
+                        &__box {
+                            margin-top: 13px;
+                            margin-right: 12px;
+
+                            &__description {
+                                >h1 {
+                                    font-size: 16px;
+                                    margin-bottom: 26px;
+                                }
+
+                                &__attributes {
+                                    font-size: 14px;
+
+                                    .cart_product_quantity>input {
+                                        width: 24px;
+                                        height: 15px;
+                                        font-size: 10px;
+                                        text-align: center;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &__right {
+                flex-direction: column;
+                gap: 48px;
+
+                & > form {
+                    margin-bottom: 0;
+                }
+
+                &__price_info {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        &__button {
+            gap: 9px;
+            font-size: 12px;
+            width: 175px;
+            height: 33px;
         }
     }
 }

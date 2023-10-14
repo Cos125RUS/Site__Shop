@@ -1445,6 +1445,61 @@ textarea {
     max-height: 214px;
   }
 }
+@media (max-width: 767px) {
+  .cart {
+    padding-top: 39px;
+  }
+  .cart__box {
+    gap: 48px;
+  }
+  .cart__box__left {
+    min-width: 0;
+    width: 358px;
+  }
+  .cart__box__left__products {
+    gap: 32px;
+    margin-bottom: 30px;
+  }
+  .cart__box__left__products__product {
+    gap: 17px;
+  }
+  .cart__box__left__products__product img {
+    height: 188px;
+  }
+  .cart__box__left__products__product__box {
+    margin-top: 13px;
+    margin-right: 12px;
+  }
+  .cart__box__left__products__product__box__description > h1 {
+    font-size: 16px;
+    margin-bottom: 26px;
+  }
+  .cart__box__left__products__product__box__description__attributes {
+    font-size: 14px;
+  }
+  .cart__box__left__products__product__box__description__attributes .cart_product_quantity > input {
+    width: 24px;
+    height: 15px;
+    font-size: 10px;
+    text-align: center;
+  }
+  .cart__box__right {
+    flex-direction: column;
+    gap: 48px;
+  }
+  .cart__box__right > form {
+    margin-bottom: 0;
+  }
+  .cart__box__right__price_info {
+    margin-top: 0;
+  }
+  .cart__button {
+    gap: 9px;
+    font-size: 12px;
+    width: 175px;
+    height: 33px;
+  }
+}
 .registration {
   padding-top: 64px;
   padding-bottom: 96px;
