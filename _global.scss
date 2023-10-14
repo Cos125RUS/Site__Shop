@@ -62,3 +62,7 @@ textarea {
     @include center(368px);
     
 }
+
+@media (max-width: 767px) {
+    @include center(187px);
+}

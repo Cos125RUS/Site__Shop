@@ -47,3 +47,24 @@
         }
     }
 }
+
+@media (max-width: 767px) {
+    .footer {
+        min-height: 143px;
+        align-items: end;
+
+        &__container {
+            flex-direction: column-reverse;
+        }
+
+        &__left {
+            padding-left: 0px;
+            margin-bottom: 9px;
+        }
+
+        &__right {
+            padding-right: 0px;
+            margin-bottom: 40px;
+        }
+    }
+}

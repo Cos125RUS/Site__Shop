@@ -257,3 +257,59 @@
     }
 
 }
+
+@media (max-width: 767px) {
+    .banner {
+        &__content {
+            justify-content: start;
+            min-height: 363px;
+        }
+
+        &__left {
+            display: none;
+        }
+
+        &__text__box {
+            gap: 15px;
+            align-items: center;
+            padding-left: 56px;
+
+            &>img {
+                max-height: 61px;
+            }
+        }
+
+        &__text {
+            min-width: 236px;
+
+            b {
+                font-size: 38px;
+            }
+
+            h1,
+            span {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .advantages {
+        gap: 46px;
+        padding-bottom: 81px;
+    }
+
+    .contact {
+        &__content {
+            gap: 59px;
+            padding-bottom: 109px;
+        }
+
+        .subscribe {
+            gap: 22px;
+
+            &__text {
+                min-width: 341px;
+            }
+        }
+    }
+}
