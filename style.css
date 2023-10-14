@@ -1259,8 +1259,10 @@ textarea {
 @media (max-width: 767px) {
   .catalog_page__filter_sort__box__filter {
     min-width: 0;
-    font-size: 0;
     left: -15px;
+  }
+  .catalog_page__filter_sort__box__filter > summary span {
+    font-size: 0;
   }
   .catalog_page__filter_sort__box__filter summary svg {
     width: 38px;

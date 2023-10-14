@@ -226,8 +226,11 @@
             &__box {
                 &__filter {
                     min-width: 0;
-                    font-size: 0;
                     left: -15px;
+
+                    &>summary span {
+                        font-size: 0;
+                    }
 
                     & summary svg {
                         width: 38px;
@@ -237,6 +240,7 @@
 
                 &__options__all_options {
                     margin-right: 9px;
+
                     &__option .price_frame {
                         left: -75px;
                     }
@@ -244,6 +248,7 @@
             }
         }
     }
+
     .catalog_page .product__items .product__item:last-child {
         display: inline-block;
     }
